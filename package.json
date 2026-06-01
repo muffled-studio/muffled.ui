@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "bun run build:registry && next build",
+    "build:registry": "bun run scripts/build-registry.ts",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o public/storybook",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
+    "lint": "biome check .",
+    "format": "biome format --write ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
