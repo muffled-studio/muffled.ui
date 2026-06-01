@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -16,6 +17,8 @@
 # next.js
 /.next/
 /out/
+/.next
+/out
 
 # production
 /build
@@ -41,3 +44,9 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+public/r/
+public/storybook/
+playwright-report/
+test-results/
+storybook-static/
