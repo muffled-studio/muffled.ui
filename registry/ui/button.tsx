@@ -1,13 +1,11 @@
-"use client";
-
 import * as React from "react";
-import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import { Slot } from "@radix-ui/react-slot";
 
 import { cn } from "@/registry/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap border text-sm uppercase tracking-[-0.01em] transition-colors disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-ink)]",
+  "inline-flex items-center justify-center whitespace-nowrap border text-sm uppercase tracking-[-0.01em] transition-colors outline-none disabled:pointer-events-none disabled:opacity-50 focus-visible:ring-1 focus-visible:ring-[var(--color-ink)]",
   {
     variants: {
       variant: {
@@ -20,7 +18,7 @@ const buttonVariants = cva(
       },
       size: {
         sm: "h-8 px-3",
-        md: "h-10 px-4",
+        md: "h-10 px-4 text-sm",
         lg: "h-12 px-5",
       },
     },
@@ -32,15 +30,15 @@ const buttonVariants = cva(
 );
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  extends React.ComponentProps<"button">,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 
 function Button({
   className,
-  variant,
-  size,
+  variant = "default",
+  size = "md",
   asChild = false,
   ...props
 }: ButtonProps) {
@@ -49,6 +47,8 @@ function Button({
   return (
     <Comp
       data-slot="button"
+      data-variant={variant}
+      data-size={size}
       className={cn(buttonVariants({ variant, size }), className)}
       {...props}
     />
