@@ -19,13 +19,6 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [
-    (Story) => (
-      <div style={{ fontFamily: "\"Martian Mono\", monospace", padding: "2rem" }}>
-        <Story />
-      </div>
-    ),
-  ],
 };
 
 export default preview;
