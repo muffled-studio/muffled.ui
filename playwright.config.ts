@@ -6,7 +6,7 @@ export default defineConfig({
   use: {
     ...devices["Desktop Chrome"],
     viewport: { width: 1280, height: 720 },
-    baseURL: "http://127.0.0.1:6006",
+    baseURL: "http://127.0.0.1:6007",
   },
   expect: {
     toHaveScreenshot: {
@@ -14,9 +14,9 @@ export default defineConfig({
     },
   },
   webServer: {
-    command: "bun run storybook --ci --quiet",
-    url: "http://127.0.0.1:6006",
-    reuseExistingServer: true,
+    command: "bun run storybook -- --port 6007 --ci --quiet",
+    url: "http://127.0.0.1:6007",
+    reuseExistingServer: false,
     timeout: 120000,
   },
 });
