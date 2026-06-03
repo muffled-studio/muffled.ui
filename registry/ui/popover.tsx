@@ -5,6 +5,7 @@ import { Popover as PopoverPrimitive } from "radix-ui"
 
 import { cn } from "@/registry/lib/surface"
 import { floatingSurfaceClasses } from "@/registry/lib/surface"
+import { ThemedPortalShell } from "@/registry/lib/portal-container"
 
 function Popover({
   ...props
@@ -26,17 +27,19 @@ function PopoverContent({
 }: React.ComponentProps<typeof PopoverPrimitive.Content>) {
   return (
     <PopoverPrimitive.Portal>
-      <PopoverPrimitive.Content
-        data-slot="popover-content"
-        align={align}
-        sideOffset={sideOffset}
-        className={cn(
-          "z-50 flex w-72 origin-(--radix-popover-content-transform-origin) flex-col gap-2.5 p-2.5 text-sm",
-          floatingSurfaceClasses(),
-          className
-        )}
-        {...props}
-      />
+      <ThemedPortalShell>
+        <PopoverPrimitive.Content
+          data-slot="popover-content"
+          align={align}
+          sideOffset={sideOffset}
+          className={cn(
+            "z-50 flex w-72 origin-(--radix-popover-content-transform-origin) flex-col gap-2.5 p-2.5 text-sm",
+            floatingSurfaceClasses(),
+            className
+          )}
+          {...props}
+        />
+      </ThemedPortalShell>
     </PopoverPrimitive.Portal>
   )
 }

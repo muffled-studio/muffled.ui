@@ -5,6 +5,7 @@ import { Menubar as MenubarPrimitive } from "radix-ui";
 import type * as React from "react";
 import { cn } from "@/registry/lib/surface";
 import { floatingSurfaceClasses } from "@/registry/lib/surface";
+import { ThemedPortalShell } from "@/registry/lib/portal-container";
 
 function Menubar({
   className,
@@ -73,18 +74,20 @@ function MenubarContent({
 }: React.ComponentProps<typeof MenubarPrimitive.Content>) {
   return (
     <MenubarPortal>
-      <MenubarPrimitive.Content
-        data-slot="menubar-content"
-        align={align}
-        alignOffset={alignOffset}
-        sideOffset={sideOffset}
-        className={cn(
-          "z-50 min-w-36 origin-(--radix-menubar-content-transform-origin) overflow-hidden p-1",
-          floatingSurfaceClasses(),
-          className,
-        )}
-        {...props}
-      />
+      <ThemedPortalShell>
+        <MenubarPrimitive.Content
+          data-slot="menubar-content"
+          align={align}
+          alignOffset={alignOffset}
+          sideOffset={sideOffset}
+          className={cn(
+            "z-50 min-w-36 origin-(--radix-menubar-content-transform-origin) overflow-hidden p-1",
+            floatingSurfaceClasses(),
+            className,
+          )}
+          {...props}
+        />
+      </ThemedPortalShell>
     </MenubarPortal>
   );
 }
