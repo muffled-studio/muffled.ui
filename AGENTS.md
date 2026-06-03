@@ -1,7 +1,8 @@
 # muffled.studio — design rules
 
-This repo follows the muffled.studio design system. Full reference lives in
-`design-system/README.md` and `app/globals.css`. The rules below are
+This repo follows the muffled.studio design system. Full brand narrative lives in
+[muffled.skills](https://github.com/muffled-studio/muffled.skills) (`muffled-studio-design` → `references/README.md`).
+Tokens: `app/globals.css`. The rules below are
 non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadows,
 1px borders, and a gray ramp; we use none of those).
 
@@ -81,7 +82,7 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 - No emoji. Unicode arrows (→ ← ↑ ↓) and ✓ ✕ are fine when literally correct.
 
 ## Logo
-- `design-system/assets/logo-light.svg` (on paper) · `logo-dark.svg` (on ink).
+- `public/logo-ink.svg` (on paper) · `public/logo-paper.svg` (on ink).
 - Two colors ever. **Never below 24px.** Clear-space = the cuboid's short side.
 
 ## Registry
@@ -91,3 +92,16 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 - Namespace: `"@muffled": "https://ui.muffled.studio/r/{name}.json"` in consumer `components.json`
 - Theme: `bunx shadcn@latest add @muffled/theme`
 - Components: `bunx shadcn@latest add @muffled/<name>`
+
+## Agent skills
+
+All skills live in [muffled.skills](https://github.com/muffled-studio/muffled.skills). Install with `bunx skills add` — see that repo's README.
+
+| Skill | When |
+|-------|------|
+| **muffled-ui-maintainer** | Editing this registry |
+| **muffled-ui** | Consuming `@muffled` in other apps |
+| **muffled-studio-design** | Brand / visual rules |
+| **muffled-writing** | Copy and voice |
+
+Rules always applied in this workspace: `AGENTS.md` + `app/globals.css`.

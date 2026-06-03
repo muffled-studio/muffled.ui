@@ -17,7 +17,7 @@
   ·
   <a href="https://ui.muffled.studio/registry.json">registry.json</a>
   ·
-  <a href="design-system/README.md">design system</a>
+  <a href="https://github.com/muffled-studio/muffled.skills">design system (skills)</a>
 </p>
 
 ---
@@ -67,3 +67,15 @@ bun run test:visual  # playwright snapshots
 6. visual + build checks
 
 match Storybook stories and the rules in `AGENTS.md`.
+
+## agent skills
+
+All skills: [muffled.skills](https://github.com/muffled-studio/muffled.skills)
+
+```bash
+# this repo
+bunx skills add muffled-studio/muffled.skills --skill muffled-ui-maintainer --skill muffled-studio-design -a cursor -a claude-code -y
+
+# consumer app
+bunx skills add muffled-studio/muffled.skills --skill muffled-ui --skill muffled-studio-design -a cursor -a claude-code -y
+```
