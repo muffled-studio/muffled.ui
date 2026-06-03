@@ -24,7 +24,6 @@ If creating visual artifacts (slides, mocks, throwaway prototypes, etc), copy as
 
 ```
 design-system/README.md              · brand guide (read this first)
-design-system/colors_and_type.css    · all CSS tokens, ready to import
+app/globals.css                      · tokens and theme (source of truth)
 design-system/assets/                · logo-light.svg · logo-dark.svg
-design-system/preview/               · individual specimen cards (HTML)
 ```

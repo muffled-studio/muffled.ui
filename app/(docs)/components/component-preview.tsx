@@ -1,7 +1,7 @@
 "use client";
 
-import { demos } from "@/demos";
-import { ThemePanel } from "@/demos/theme-panel";
+import { demos } from "../demos";
+import { ThemePanel } from "../demos/theme-panel";
 
 export function ComponentPreview({ slug }: { slug: string }) {
   const Demo = demos[slug];

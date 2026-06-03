@@ -4,7 +4,7 @@
   "title": "Alert Dialog",
   "description": "Modal confirmation on paper. Hairline border, ink wash overlay, no shadow or blur.",
   "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils", "button"],
+  "registryDependencies": ["surface", "button"],
   "files": [
     {
       "path": "registry/ui/alert-dialog.tsx",

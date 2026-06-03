@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
 
 import "./globals.css";
-import { cn } from "@/lib/utils";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
@@ -21,6 +20,21 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "muffled.ui",
   description: "Standalone shadcn registry for muffled.ui components.",
+  icons: {
+    icon: [
+      {
+        url: "/logo-ink.svg",
+        type: "image/svg+xml",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/logo-paper.svg",
+        type: "image/svg+xml",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: "/logo-ink.svg",
+  },
 };
 
 export default function RootLayout({
@@ -31,13 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(
-        "h-full",
-        "antialiased",
-        "font-sans",
-        spaceGrotesk.variable,
-        spaceMono.variable,
-      )}
+      className={`h-full antialiased font-sans ${spaceGrotesk.variable} ${spaceMono.variable}`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

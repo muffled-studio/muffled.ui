@@ -14,7 +14,7 @@
   "rtl": false,
   "aliases": {
     "components": "@/registry",
-    "utils": "@/registry/lib/utils",
+    "utils": "@/registry/lib/surface",
     "ui": "@/registry/ui",
     "lib": "@/registry/lib",
     "hooks": "@/registry/hooks"

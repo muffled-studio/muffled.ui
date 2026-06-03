@@ -13,20 +13,30 @@ export default function LandingPage() {
           we ship ink-and-paper react primitives through a standalone shadcn registry.
         </p>
         <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
-          bunx shadcn@latest add https://ui.muffled.studio/r/utils.json
+          bunx shadcn@latest add https://ui.muffled.studio/r/surface.json
         </pre>
       </section>
 
-      <section className="space-y-3">
+      <section className="space-y-4">
         <h2 className="font-mono text-sm tracking-tight">components</h2>
         {components.length === 0 ? (
           <p className="text-sm text-muted-foreground">none yet. import from shadcn next.</p>
         ) : (
-          <ul className="space-y-2 text-sm">
+          <ul className="grid gap-3 sm:grid-cols-2">
             {components.map((item) => (
               <li key={item.name}>
-                <Link href={`/components/${item.name}/`} className="underline underline-offset-4">
-                  {item.name}
+                <Link
+                  href={`/components/${item.name}/`}
+                  className="group flex h-full flex-col gap-2 border border-border bg-background p-4 transition-colors duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:border-border-strong hover:bg-muted"
+                >
+                  <span className="font-mono text-sm tracking-tight group-hover:underline group-hover:underline-offset-4">
+                    {item.title ?? item.name}
+                  </span>
+                  {item.description ? (
+                    <span className="text-xs leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </span>
+                  ) : null}
                 </Link>
               </li>
             ))}

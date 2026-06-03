@@ -4,7 +4,7 @@
   "title": "Calendar",
   "description": "Date picker grid on ink and paper. Range and single selection via react-day-picker.",
   "dependencies": ["react-day-picker", "date-fns"],
-  "registryDependencies": ["utils", "button"],
+  "registryDependencies": ["surface", "button"],
   "files": [
     {
       "path": "registry/ui/calendar.tsx",

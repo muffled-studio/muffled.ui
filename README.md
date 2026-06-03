@@ -7,7 +7,7 @@ Design system reference: `design-system/README.md`, tokens in `app/globals.css`.
 ## Consumer install
 
 ```bash
-bunx shadcn@latest add https://ui.muffled.studio/r/utils.json
+bunx shadcn@latest add https://ui.muffled.studio/r/surface.json
 ```
 
 Docs site: [https://ui.muffled.studio/](https://ui.muffled.studio/)
@@ -16,4 +16,4 @@ Docs site: [https://ui.muffled.studio/](https://ui.muffled.studio/)
 
 Create the source file in `registry/ui`, register it in `registry.json`, run `bun run build:registry`, add stories in `stories/`, update docs route rendering in `app/(docs)/components/[slug]/page.tsx`, then run visual and build checks.
 
-Match `design-system/preview/*.html` and the rules in `AGENTS.md`.
+Match Storybook stories and the rules in `AGENTS.md`.

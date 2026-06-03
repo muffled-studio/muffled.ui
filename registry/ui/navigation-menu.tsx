@@ -2,7 +2,7 @@ import * as React from "react"
 import { cva } from "class-variance-authority"
 import { NavigationMenu as NavigationMenuPrimitive } from "radix-ui"
 
-import { cn } from "@/registry/lib/utils"
+import { cn } from "@/registry/lib/surface"
 import { floatingSurfaceClasses } from "@/registry/lib/surface"
 import { ChevronDownIcon } from "lucide-react"
 

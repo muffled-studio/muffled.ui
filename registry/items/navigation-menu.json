@@ -4,7 +4,7 @@
   "title": "Navigation Menu",
   "description": "Site navigation with dropdown panels.",
   "dependencies": ["class-variance-authority", "radix-ui", "lucide-react"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/navigation-menu.tsx",

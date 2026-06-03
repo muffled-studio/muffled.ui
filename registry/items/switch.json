@@ -4,7 +4,7 @@
   "title": "Switch",
   "description": "Binary toggle on ink and paper. Hairline track, snap thumb motion, opacity hover and press.",
   "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/switch.tsx",

@@ -4,7 +4,7 @@
   "title": "Textarea",
   "description": "Multi-line text input on ink and paper. Hairline border, outline focus, no shadows.",
   "dependencies": [],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/textarea.tsx",

@@ -4,7 +4,7 @@
   "title": "Tabs",
   "description": "Section switching with segmented and underline variants. Hairline borders, opacity hover, no shadows.",
   "dependencies": ["class-variance-authority", "radix-ui"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/tabs.tsx",

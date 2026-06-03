@@ -1,4 +1,9 @@
-import { cn } from "@/registry/lib/utils";
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 /** Paper/ink floating panel — menus, popovers, select dropdowns. */
 export function floatingSurfaceClasses(...extra: string[]) {

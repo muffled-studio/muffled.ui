@@ -4,7 +4,7 @@
   "title": "Pagination",
   "description": "Page navigation with previous, next, numbered links, and ellipsis.",
   "dependencies": ["lucide-react"],
-  "registryDependencies": ["utils", "button"],
+  "registryDependencies": ["surface", "button"],
   "files": [
     {
       "path": "registry/ui/pagination.tsx",

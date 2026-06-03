@@ -26,7 +26,5 @@ If the user invokes this skill without any other guidance, ask them what they wa
 
 ```
 README.md              · brand guide (read this first)
-colors_and_type.css    · all CSS tokens, ready to import
-assets/                · logo-light.svg · logo-dark.svg
-preview/               · individual specimen cards (HTML)
+assets/                · logo-light.svg · logo-dark.svg (see public/logo-*.svg in the app)
 ```
