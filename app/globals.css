@@ -32,6 +32,7 @@
   --input: rgba(26, 26, 26, 0.24);
   --ring: rgba(26, 26, 26, 0.56);
   --radius: 6px;
+  --bw: 0.5px;
 
   --chart-1: var(--u-blue);
   --chart-2: var(--u-green);
@@ -184,7 +185,7 @@ h6 {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
