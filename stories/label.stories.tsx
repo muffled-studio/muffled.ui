@@ -23,7 +23,7 @@ export const Paper: Story = {
         <Label {...args} htmlFor="paper-name" />
         <input
           id="paper-name"
-          className="rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline-[0.5px] focus-visible:outline-offset-2 focus-visible:outline-ring"
+          className="rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring"
           placeholder="value"
         />
       </div>
@@ -34,7 +34,7 @@ export const Paper: Story = {
         <input
           id="paper-disabled"
           disabled
-          className="peer rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
+          className="peer rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
         />
       </div>
     </div>
@@ -49,7 +49,7 @@ export const Ink: Story = {
         <Label {...args} htmlFor="ink-name" />
         <input
           id="ink-name"
-          className="rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline-[0.5px] focus-visible:outline-offset-2 focus-visible:outline-ring"
+          className="rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring"
           placeholder="value"
         />
       </div>
@@ -60,7 +60,7 @@ export const Ink: Story = {
         <input
           id="ink-disabled"
           disabled
-          className="peer rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
+          className="peer rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
         />
       </div>
     </div>
