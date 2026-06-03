@@ -1,25 +1,102 @@
 @import "tailwindcss";
-@import "@fontsource/martian-mono";
-
-@theme inline {
-  --font-sans: "Martian Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco,
-    Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-mono: "Martian Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco,
-    Consolas, "Liberation Mono", "Courier New", monospace;
-  --color-paper: #f7f7f2;
-  --color-paper-2: #efefe8;
-  --color-ink: #0f0f0c;
-  --color-muted-ink: #45453f;
-  --color-border: #0f0f0c;
-  --radius: 0;
-}
 
 :root {
-  color-scheme: only light;
+  --ink: #1a1a1a;
+  --paper: #f5f5f5;
+  --u-red: #c0392b;
+  --u-green: #27ae60;
+  --u-amber: #d4830a;
+  --u-blue: #2471a3;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: rgba(26, 26, 26, 0.06);
+  --secondary-foreground: var(--ink);
+  --muted: rgba(26, 26, 26, 0.06);
+  --muted-foreground: rgba(26, 26, 26, 0.72);
+  --accent: rgba(26, 26, 26, 0.06);
+  --accent-foreground: var(--ink);
+  --destructive: var(--u-red);
+  --destructive-foreground: var(--paper);
+  --border: rgba(26, 26, 26, 0.24);
+  --input: rgba(26, 26, 26, 0.24);
+  --ring: rgba(26, 26, 26, 0.56);
+  --radius: 6px;
+
+  --ease-drift: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-snap: cubic-bezier(0.2, 0, 0, 1);
+  --d-drift: 220ms;
+  --d-snap: 90ms;
+
+  color-scheme: light;
 }
 
-* {
-  border-color: var(--color-border);
+.dark,
+[data-theme="dark"] {
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --card: var(--ink);
+  --card-foreground: var(--paper);
+  --popover: var(--ink);
+  --popover-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--ink);
+  --secondary: rgba(245, 245, 245, 0.12);
+  --secondary-foreground: var(--paper);
+  --muted: rgba(245, 245, 245, 0.12);
+  --muted-foreground: rgba(245, 245, 245, 0.72);
+  --accent: rgba(245, 245, 245, 0.12);
+  --accent-foreground: var(--paper);
+  --destructive: var(--u-red);
+  --destructive-foreground: var(--paper);
+  --border: rgba(245, 245, 245, 0.24);
+  --input: rgba(245, 245, 245, 0.24);
+  --ring: rgba(245, 245, 245, 0.56);
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-u-red: var(--u-red);
+  --color-u-green: var(--u-green);
+  --color-u-amber: var(--u-amber);
+  --color-u-blue: var(--u-blue);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 html,
@@ -28,8 +105,38 @@ body {
 }
 
 body {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  font-family: var(--font-sans);
-  letter-spacing: -0.01em;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(26, 26, 26, 0.12);
+  color: var(--foreground);
+}
+
+.dark ::selection,
+[data-theme="dark"] ::selection {
+  background: rgba(245, 245, 245, 0.24);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }

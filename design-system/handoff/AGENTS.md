@@ -28,7 +28,8 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 - **Space Grotesk** — body, labels, UI. Weights 300–700; body 400, labels 500,
   emphasis 600. Body line-height 1.55.
 - Never set long body in mono. Never set a headline in grotesk.
-- Wire fonts with `next/font/google` (Space Mono, Space Grotesk). No runtime CDN.
+- Both families are self-hosted from `design-system/fonts/*.ttf` — wire them via
+  `@font-face` / `next/font`; do not pull from a CDN.
 
 ## Spacing · radius · borders
 - Spacing: **4px base unit**. Scale: 4 / 8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 64 / 80 / 96.
@@ -65,9 +66,3 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 ## Logo
 - `design-system/assets/logo-light.svg` (on paper) · `logo-dark.svg` (on ink).
 - Two colors ever. **Never below 24px.** Clear-space = the cuboid's short side.
-
-## Registry
-
-- Base URL: `https://ui.muffled.studio/`
-- Manifest: `https://ui.muffled.studio/registry.json`
-- Install: `bunx shadcn@latest add https://ui.muffled.studio/r/<name>.json`

@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>inputs</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .field { display:flex; flex-direction: column; gap: 4px; }
+  label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--ink-72);
+    letter-spacing: 0.04em;
+  }
+  input, textarea, select {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 8px 10px;
+    border: 0.5px solid rgba(26,26,26,0.24);
+    border-radius: 6px;
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 220ms cubic-bezier(0.4,0,0.2,1);
+  }
+  input:focus, textarea:focus, select:focus { border-color: var(--ink); }
+  .err input { border-color: #C0392B; }
+  .err .hint { color: #C0392B; }
+  .hint { font-size: 10px; color: var(--ink-56); }
+  textarea { min-height: 56px; resize: vertical; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">inputs · forms</div>
+  <div class="grid">
+    <div class="field">
+      <label>name</label>
+      <input value="josh batley" />
+      <div class="hint">filled · default</div>
+    </div>
+    <div class="field">
+      <label>handle</label>
+      <input placeholder="muffled" />
+      <div class="hint">empty · placeholder</div>
+    </div>
+    <div class="field err">
+      <label>email</label>
+      <input value="not-an-email" />
+      <div class="hint">that's not an email.</div>
+    </div>
+    <div class="field">
+      <label>role</label>
+      <select><option>solo</option><option>studio</option></select>
+      <div class="hint">select</div>
+    </div>
+  </div>
+  <div class="field">
+    <label>notes</label>
+    <textarea>we build things. mostly software. some of it ships.</textarea>
+  </div>
+</div>
+</body></html>

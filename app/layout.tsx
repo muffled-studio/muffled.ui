@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
+
 import "./globals.css";
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "muffled.ui",
@@ -12,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html
+      lang="en"
+      className={`${spaceMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
