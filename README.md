@@ -1,12 +1,36 @@
-# muffled.ui registry
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/logo-paper.svg">
+    <img src="public/logo-ink.svg" alt="muffled.studio" height="56">
+  </picture>
+</p>
 
-Standalone shadcn-style component registry for `muffled.ui`, published as static JSON plus docs.
+<h1 align="center">muffled.ui</h1>
 
-Design system reference: `design-system/README.md`, tokens in `app/globals.css`.
+<p align="center">
+  shadcn-compatible component registry.<br>
+  ink, paper, hairlines — no shadows.
+</p>
 
-## Consumer install
+<p align="center">
+  <a href="https://ui.muffled.studio/">docs</a>
+  ·
+  <a href="https://ui.muffled.studio/registry.json">registry.json</a>
+  ·
+  <a href="design-system/README.md">design system</a>
+</p>
 
-Add to `components.json`:
+---
+
+## what this is
+
+we ship UI as static JSON. install components with the shadcn CLI — same workflow, different defaults.
+
+50+ components. Space Mono headings, Space Grotesk body, 0.5px borders, zero box shadows. tokens live in `app/globals.css`; rules in `AGENTS.md`.
+
+## install
+
+add the registry to `components.json`:
 
 ```json
 "registries": {
@@ -14,15 +38,32 @@ Add to `components.json`:
 }
 ```
 
+pull the theme first, then whatever we need:
+
 ```bash
 bunx shadcn@latest add @muffled/theme
 bunx shadcn@latest add @muffled/button
 ```
 
-Docs site: [https://ui.muffled.studio/](https://ui.muffled.studio/)
+full catalog: [ui.muffled.studio](https://ui.muffled.studio/)
 
-## Add a new component
+## development
 
-Create the source file in `registry/ui`, register it in `registry.json`, run `bun run build:registry`, add stories in `stories/`, update docs route rendering in `app/(docs)/components/[slug]/page.tsx`, then run visual and build checks.
+```bash
+bun install
+bun run dev          # docs site
+bun run storybook    # component stories
+bun run build        # registry + next build
+bun run test:visual  # playwright snapshots
+```
 
-Match Storybook stories and the rules in `AGENTS.md`.
+## add a component
+
+1. source in `registry/ui`
+2. register in `registry.json`
+3. `bun run build:registry`
+4. stories in `stories/`
+5. docs route in `app/(docs)/components/[slug]/page.tsx`
+6. visual + build checks
+
+match Storybook stories and the rules in `AGENTS.md`.
