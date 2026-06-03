@@ -1,7 +1,7 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
-import { cssToRegistryObject } from "./css-to-registry-object.ts";
+import { cssToRegistryObject } from "./css-to-registry-object";
 
 type RegistryFile = {
   path: string;
