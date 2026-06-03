@@ -5,6 +5,7 @@ import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
 import type * as React from "react";
 import { cn } from "@/registry/lib/surface";
 import { floatingSurfaceClasses } from "@/registry/lib/surface";
+import { ThemedPortalShell } from "@/registry/lib/portal-container";
 
 function DropdownMenu({
   ...props
@@ -38,19 +39,21 @@ function DropdownMenuContent({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Content>) {
   return (
-    <DropdownMenuPrimitive.Portal>
-      <DropdownMenuPrimitive.Content
-        data-slot="dropdown-menu-content"
-        sideOffset={sideOffset}
-        align={align}
-        className={cn(
-          "z-50 max-h-(--radix-dropdown-menu-content-available-height) w-(--radix-dropdown-menu-trigger-width) min-w-32 origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto p-1 data-[state=closed]:overflow-hidden",
-          floatingSurfaceClasses(),
-          className,
-        )}
-        {...props}
-      />
-    </DropdownMenuPrimitive.Portal>
+    <DropdownMenuPortal>
+      <ThemedPortalShell>
+        <DropdownMenuPrimitive.Content
+          data-slot="dropdown-menu-content"
+          sideOffset={sideOffset}
+          align={align}
+          className={cn(
+            "z-50 max-h-(--radix-dropdown-menu-content-available-height) w-(--radix-dropdown-menu-trigger-width) min-w-32 origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto p-1 data-[state=closed]:overflow-hidden",
+            floatingSurfaceClasses(),
+            className,
+          )}
+          {...props}
+        />
+      </ThemedPortalShell>
+    </DropdownMenuPortal>
   );
 }
 

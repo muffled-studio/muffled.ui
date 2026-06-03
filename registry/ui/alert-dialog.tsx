@@ -5,6 +5,7 @@ import { AlertDialog as AlertDialogPrimitive } from "radix-ui";
 
 import { cn } from "@/registry/lib/surface";
 import { modalSurfaceClasses } from "@/registry/lib/surface";
+import { ThemedPortalShell } from "@/registry/lib/portal-container";
 import { Button } from "@/registry/ui/button";
 
 function AlertDialog({
@@ -54,17 +55,19 @@ function AlertDialogContent({
 }) {
   return (
     <AlertDialogPortal>
-      <AlertDialogOverlay />
-      <AlertDialogPrimitive.Content
-        data-slot="alert-dialog-content"
-        data-size={size}
-        className={cn(
-          "group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 gap-4 p-4 font-sans data-[size=default]:max-w-xs data-[size=sm]:max-w-xs data-[size=default]:sm:max-w-sm",
-          modalSurfaceClasses(),
-          className,
-        )}
-        {...props}
-      />
+      <ThemedPortalShell>
+        <AlertDialogOverlay />
+        <AlertDialogPrimitive.Content
+          data-slot="alert-dialog-content"
+          data-size={size}
+          className={cn(
+            "group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 gap-4 p-4 font-sans data-[size=default]:max-w-xs data-[size=sm]:max-w-xs data-[size=default]:sm:max-w-sm",
+            modalSurfaceClasses(),
+            className,
+          )}
+          {...props}
+        />
+      </ThemedPortalShell>
     </AlertDialogPortal>
   );
 }

@@ -5,6 +5,7 @@ import type * as React from "react";
 
 import { cn } from "@/registry/lib/surface";
 import { floatingSurfaceClasses } from "@/registry/lib/surface";
+import { ThemedPortalShell } from "@/registry/lib/portal-container";
 
 function HoverCard({
   ...props
@@ -28,17 +29,19 @@ function HoverCardContent({
 }: React.ComponentProps<typeof HoverCardPrimitive.Content>) {
   return (
     <HoverCardPrimitive.Portal data-slot="hover-card-portal">
-      <HoverCardPrimitive.Content
-        data-slot="hover-card-content"
-        align={align}
-        sideOffset={sideOffset}
-        className={cn(
-          "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) rounded-lg p-2.5 text-sm",
-          floatingSurfaceClasses(),
-          className,
-        )}
-        {...props}
-      />
+      <ThemedPortalShell>
+        <HoverCardPrimitive.Content
+          data-slot="hover-card-content"
+          align={align}
+          sideOffset={sideOffset}
+          className={cn(
+            "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) rounded-lg p-2.5 text-sm",
+            floatingSurfaceClasses(),
+            className,
+          )}
+          {...props}
+        />
+      </ThemedPortalShell>
     </HoverCardPrimitive.Portal>
   );
 }

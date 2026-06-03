@@ -1,6 +1,7 @@
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:is(.dark *:not([data-theme="light"] *)));
 
-:root {
+:root,
+[data-theme="light"] {
   --ink: #1a1a1a;
   --paper: #f5f5f5;
   --u-red: #c0392b;
@@ -171,6 +172,11 @@ body {
 .dark ::selection,
 [data-theme="dark"] ::selection {
   background: rgba(245, 245, 245, 0.24);
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(26, 26, 26, 0.12);
+  color: var(--foreground);
 }
 
 h1,

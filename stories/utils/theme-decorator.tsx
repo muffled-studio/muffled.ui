@@ -10,7 +10,7 @@ export const withTheme =
           ? "dark flex min-h-screen w-full items-center justify-center bg-background p-6 text-foreground"
           : "flex min-h-screen w-full items-center justify-center bg-background p-6 text-foreground"
       }
-      data-theme={theme === "ink" ? "dark" : undefined}
+      data-theme={theme === "ink" ? "dark" : "light"}
     >
       <Story />
     </div>
