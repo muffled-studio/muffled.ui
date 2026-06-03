@@ -19,10 +19,11 @@ import { TooltipProvider } from "@/registry/ui/tooltip";
 
 export function SidebarDemo() {
   return (
-    <TooltipProvider>
-      <SidebarProvider>
-        <Sidebar>
-          <SidebarHeader>
+    <div className="relative h-80 w-full overflow-hidden rounded-md border border-border [transform:translateZ(0)] [&_[data-slot=sidebar-container]]:h-full [&_[data-slot=sidebar-wrapper]]:h-full [&_[data-slot=sidebar-wrapper]]:min-h-0">
+      <TooltipProvider>
+        <SidebarProvider className="h-full min-h-0">
+          <Sidebar>
+            <SidebarHeader>
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton size="lg">
@@ -52,15 +53,16 @@ export function SidebarDemo() {
               </SidebarGroupContent>
             </SidebarGroup>
           </SidebarContent>
-        </Sidebar>
-        <SidebarInset>
-          <header className="flex h-12 items-center gap-2 border-b px-4">
-            <SidebarTrigger />
-            <span className="text-sm">content</span>
-          </header>
-          <div className="p-4 text-sm text-muted-foreground">main area</div>
-        </SidebarInset>
-      </SidebarProvider>
-    </TooltipProvider>
+          </Sidebar>
+          <SidebarInset>
+            <header className="flex h-12 items-center gap-2 border-b px-4">
+              <SidebarTrigger />
+              <span className="text-sm">content</span>
+            </header>
+            <div className="p-4 text-sm text-muted-foreground">main area</div>
+          </SidebarInset>
+        </SidebarProvider>
+      </TooltipProvider>
+    </div>
   )
 }
