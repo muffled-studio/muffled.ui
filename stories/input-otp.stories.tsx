@@ -1,0 +1,45 @@
+import type { Meta, StoryObj } from "@storybook/react"
+
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from "@/registry/ui/input-otp"
+import { withTheme } from "./utils/theme-decorator"
+
+function InputOTPDemo() {
+  return (
+    <InputOTP maxLength={6}>
+      <InputOTPGroup>
+        <InputOTPSlot index={0} />
+        <InputOTPSlot index={1} />
+        <InputOTPSlot index={2} />
+      </InputOTPGroup>
+      <InputOTPSeparator />
+      <InputOTPGroup>
+        <InputOTPSlot index={3} />
+        <InputOTPSlot index={4} />
+        <InputOTPSlot index={5} />
+      </InputOTPGroup>
+    </InputOTP>
+  )
+}
+
+const meta = {
+  title: "Input OTP",
+} satisfies Meta
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+export const Paper: Story = {
+  decorators: [withTheme("paper")],
+  render: () => <InputOTPDemo />,
+}
+
+export const Ink: Story = {
+  decorators: [withTheme("ink")],
+  render: () => <InputOTPDemo />,
+}

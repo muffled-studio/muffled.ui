@@ -1,0 +1,14 @@
+{
+  "name": "kbd",
+  "type": "registry:ui",
+  "title": "Kbd",
+  "description": "Keyboard key labels for shortcuts and hints.",
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/kbd.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/kbd.tsx"
+    }
+  ]
+}

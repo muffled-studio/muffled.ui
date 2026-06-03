@@ -1,0 +1,15 @@
+{
+  "name": "label",
+  "type": "registry:ui",
+  "title": "Label",
+  "description": "Form field labels in Space Mono. Ink opacity hierarchy, opacity hover and press, no shadows.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/label.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/label.tsx"
+    }
+  ]
+}

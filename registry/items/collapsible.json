@@ -1,0 +1,15 @@
+{
+  "name": "collapsible",
+  "type": "registry:ui",
+  "title": "Collapsible",
+  "description": "Expandable sections with trigger and animated content.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/ui/collapsible.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/collapsible.tsx"
+    }
+  ]
+}

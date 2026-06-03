@@ -1,0 +1,15 @@
+{
+  "name": "input-otp",
+  "type": "registry:ui",
+  "title": "Input OTP",
+  "description": "One-time password input with grouped slots.",
+  "dependencies": ["input-otp", "lucide-react"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/input-otp.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/input-otp.tsx"
+    }
+  ]
+}

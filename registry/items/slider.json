@@ -1,0 +1,15 @@
+{
+  "name": "slider",
+  "type": "registry:ui",
+  "title": "Slider",
+  "description": "Range input with ink track, hairline thumb, opacity hover and press.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/slider.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/slider.tsx"
+    }
+  ]
+}

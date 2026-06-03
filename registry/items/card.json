@@ -1,0 +1,15 @@
+{
+  "name": "card",
+  "type": "registry:ui",
+  "title": "Card",
+  "description": "Surface container on paper and ink. Hairline border, 6px radius, no shadow.",
+  "dependencies": [],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/card.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/card.tsx"
+    }
+  ]
+}

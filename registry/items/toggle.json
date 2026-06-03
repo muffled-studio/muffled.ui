@@ -1,0 +1,15 @@
+{
+  "name": "toggle",
+  "type": "registry:ui",
+  "title": "Toggle",
+  "description": "Two-state control for on/off options. Press snap, opacity states, hairline outline variant.",
+  "dependencies": ["class-variance-authority", "radix-ui"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/toggle.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/toggle.tsx"
+    }
+  ]
+}

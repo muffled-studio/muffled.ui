@@ -52,6 +52,12 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 - Press: opacity → 0.4. **No scale, no transform** — the brand stays still.
 - Focus: 0.5px outline at ink/56, 2px offset.
 
+## Forms
+- Stack: `react-hook-form` + `zod` + `@hookform/resolvers/zod`.
+- `Form` is `FormProvider`; wire fields with `FormField` → `FormItem` → `FormLabel` / `FormControl` / `FormDescription` / `FormMessage`.
+- **Labels** — mono via `FormLabel` (uses `Label`). **Hints** — grotesk `text-sm text-muted-foreground` on `FormDescription`. **Errors** — grotesk `text-sm text-destructive` on `FormMessage`; lowercase copy.
+- Do not restyle controls inside `FormControl`; validation surfaces through `aria-invalid` on the slotted control.
+
 ## Voice (for any UI copy)
 - Dry, precise, direct. Use **"we"** — not "I", not "you".
 - **Lowercase** by default. **No exclamation marks. No emoji.** Periods do the work.

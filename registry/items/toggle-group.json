@@ -1,0 +1,15 @@
+{
+  "name": "toggle-group",
+  "type": "registry:ui",
+  "title": "Toggle Group",
+  "description": "Grouped two-state controls for mutually exclusive or multi-select options.",
+  "dependencies": ["class-variance-authority", "radix-ui"],
+  "registryDependencies": ["utils", "toggle"],
+  "files": [
+    {
+      "path": "registry/ui/toggle-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/toggle-group.tsx"
+    }
+  ]
+}

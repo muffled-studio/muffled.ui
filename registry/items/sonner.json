@@ -1,0 +1,15 @@
+{
+  "name": "sonner",
+  "type": "registry:ui",
+  "title": "Sonner",
+  "description": "Toast notifications on ink and paper. Hairline borders, no shadows.",
+  "dependencies": ["sonner", "lucide-react"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/sonner.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sonner.tsx"
+    }
+  ]
+}

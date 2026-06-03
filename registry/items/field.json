@@ -1,0 +1,15 @@
+{
+  "name": "field",
+  "type": "registry:ui",
+  "title": "Field",
+  "description": "Form field composition. Mono labels and legends, grotesk hints and errors.",
+  "dependencies": ["class-variance-authority"],
+  "registryDependencies": ["label", "separator", "input"],
+  "files": [
+    {
+      "path": "registry/ui/field.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/field.tsx"
+    }
+  ]
+}

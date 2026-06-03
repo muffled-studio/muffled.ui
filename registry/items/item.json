@@ -1,0 +1,15 @@
+{
+  "name": "item",
+  "type": "registry:ui",
+  "title": "Item",
+  "description": "Flexible list row with title, description, media, and actions on ink and paper.",
+  "dependencies": ["class-variance-authority", "radix-ui"],
+  "registryDependencies": ["utils", "separator"],
+  "files": [
+    {
+      "path": "registry/ui/item.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/item.tsx"
+    }
+  ]
+}

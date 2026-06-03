@@ -1,0 +1,13 @@
+{
+  "name": "use-mobile",
+  "type": "registry:hook",
+  "title": "Use Mobile",
+  "description": "Detects viewport below the mobile breakpoint for responsive layout.",
+  "files": [
+    {
+      "path": "registry/hooks/use-mobile.tsx",
+      "type": "registry:hook",
+      "target": "hooks/use-mobile.tsx"
+    }
+  ]
+}

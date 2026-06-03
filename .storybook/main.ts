@@ -17,6 +17,10 @@ const config: StorybookConfig = {
 
     return {
       ...viteConfig,
+      esbuild: {
+        ...viteConfig.esbuild,
+        jsx: "automatic",
+      },
       resolve: {
         ...viteConfig.resolve,
         alias: {
