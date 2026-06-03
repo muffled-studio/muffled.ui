@@ -24,7 +24,7 @@ function Command({
     <CommandPrimitive
       data-slot="command"
       className={cn(
-        "flex size-full flex-col overflow-hidden rounded-md border-[0.5px] border-border bg-popover p-1 text-popover-foreground shadow-none",
+        "flex size-full flex-col overflow-hidden rounded-md border border-border bg-popover p-1 text-popover-foreground shadow-none",
         className,
       )}
       {...props}
@@ -69,8 +69,8 @@ function CommandInput({
   ...props
 }: React.ComponentProps<typeof CommandPrimitive.Input>) {
   return (
-    <div data-slot="command-input-wrapper" className="border-b-[0.5px] border-border p-2">
-      <InputGroup className="h-8 border-[0.5px] border-border bg-background shadow-none">
+    <div data-slot="command-input-wrapper" className="border-b border-border p-2">
+      <InputGroup className="h-8 border border-border bg-background shadow-none">
         <CommandPrimitive.Input
           data-slot="command-input"
           className={cn(
@@ -139,7 +139,7 @@ function CommandSeparator({
   return (
     <CommandPrimitive.Separator
       data-slot="command-separator"
-      className={cn("-mx-1 h-[0.5px] bg-border", className)}
+      className={cn("-mx-1 h-hairline bg-border", className)}
       {...props}
     />
   );

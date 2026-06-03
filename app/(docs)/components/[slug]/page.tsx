@@ -51,7 +51,7 @@ export default async function ComponentPage({
 
       <section className="space-y-2">
         <h2 className="font-mono text-sm">install</h2>
-        <pre className="overflow-x-auto border-[0.5px] border-border bg-muted p-4 font-mono text-xs">
+        <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
           {installCommand}
         </pre>
       </section>

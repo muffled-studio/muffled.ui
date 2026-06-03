@@ -36,6 +36,20 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
   `999px` only for genuinely round things (avatars, dots).
 - Borders: **0.5px only.** There is no 1px border. `ink/24` default, `ink/56` for
   real separation.
+- Border width is global via `--bw` / `--default-border-width` in `app/globals.css`.
+  Use `border`, `border-t`, `divide-y`, etc. — not `border-[0.5px]`. Hairline rules
+  use `h-hairline` / `w-hairline`, not `h-px` / `w-px`.
+
+## Tailwind · tokens · utilities
+- Prefer **theme tokens and named utilities** over arbitrary values. Do not use
+  `property-[value]` / `property-[var(--x)]` unless the value is genuinely one-off.
+- Design tokens live in `app/globals.css` (`@theme inline`) and
+  `design-system/colors_and_type.css`. Add missing tokens there first, then use the
+  generated class (`border`, `border-border-strong`, `h-hairline`, `duration-drift`, …).
+- Floating surfaces (popover, menu, select dropdown) share `floatingSurfaceClasses()`
+  from `registry/lib/surface.ts` — extend that, do not restyle each component.
+- Do not reintroduce shadcn defaults: `shadow-*` (other than `shadow-none`), `gray-*`,
+  `zoom-in-*` on chrome, `backdrop-blur`, or `opacity-50` for disabled (use `opacity-40`).
 
 ## Elevation
 - **No shadows.** There is no shadow system. Do not add `box-shadow`.

@@ -12,7 +12,7 @@ function SingleCalendar() {
       mode="single"
       selected={date}
       onSelect={setDate}
-      className="rounded-md border-[0.5px] border-border"
+      className="rounded-md border border-border"
     />
   );
 }
@@ -28,7 +28,7 @@ function RangeCalendar() {
       selected={range}
       onSelect={setRange}
       numberOfMonths={2}
-      className="rounded-md border-[0.5px] border-border"
+      className="rounded-md border border-border"
     />
   );
 }

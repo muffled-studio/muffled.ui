@@ -4,6 +4,7 @@ import * as React from "react"
 import { Dialog as DialogPrimitive } from "radix-ui"
 
 import { cn } from "@/registry/lib/utils"
+import { modalSurfaceClasses } from "@/registry/lib/surface"
 import { Button } from "@/registry/ui/button"
 import { XIcon } from "lucide-react"
 
@@ -61,7 +62,8 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-md border-[0.5px] border-border bg-popover p-4 font-sans text-sm text-popover-foreground shadow-none duration-[var(--d-drift)] ease-[var(--ease-drift)] outline-none sm:max-w-sm data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
+          "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 p-4 font-sans text-sm sm:max-w-sm",
+          modalSurfaceClasses(),
           className
         )}
         {...props}

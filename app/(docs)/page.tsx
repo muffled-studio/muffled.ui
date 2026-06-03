@@ -12,7 +12,7 @@ export default function LandingPage() {
         <p className="max-w-2xl text-sm text-muted-foreground">
           we ship ink-and-paper react primitives through a standalone shadcn registry.
         </p>
-        <pre className="overflow-x-auto border-[0.5px] border-border bg-muted p-4 font-mono text-xs">
+        <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
           bunx shadcn@latest add https://ui.muffled.studio/r/utils.json
         </pre>
       </section>

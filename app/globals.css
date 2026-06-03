@@ -29,6 +29,8 @@
   --destructive: var(--u-red);
   --destructive-foreground: var(--paper);
   --border: rgba(26, 26, 26, 0.24);
+  --border-strong: rgba(26, 26, 26, 0.56);
+  --border-faint: rgba(26, 26, 26, 0.12);
   --input: rgba(26, 26, 26, 0.24);
   --ring: rgba(26, 26, 26, 0.56);
   --radius: 6px;
@@ -76,6 +78,8 @@
   --destructive: var(--u-red);
   --destructive-foreground: var(--paper);
   --border: rgba(245, 245, 245, 0.24);
+  --border-strong: rgba(245, 245, 245, 0.56);
+  --border-faint: rgba(245, 245, 245, 0.12);
   --input: rgba(245, 245, 245, 0.24);
   --ring: rgba(245, 245, 245, 0.56);
 
@@ -95,6 +99,11 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 
+  --default-border-width: var(--bw);
+  --default-divide-width: var(--bw);
+  --default-outline-width: var(--bw);
+  --spacing-hairline: var(--bw);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -112,6 +121,8 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-faint: var(--border-faint);
   --color-input: var(--input);
   --color-ring: var(--ring);
 
@@ -189,5 +200,8 @@ h6 {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  hr {
+    border-top-width: var(--bw);
   }
 }

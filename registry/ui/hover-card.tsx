@@ -4,6 +4,7 @@ import { HoverCard as HoverCardPrimitive } from "radix-ui";
 import type * as React from "react";
 
 import { cn } from "@/registry/lib/utils";
+import { floatingSurfaceClasses } from "@/registry/lib/surface";
 
 function HoverCard({
   ...props
@@ -32,7 +33,8 @@ function HoverCardContent({
         align={align}
         sideOffset={sideOffset}
         className={cn(
-          "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) rounded-lg border-[0.5px] border-border bg-popover p-2.5 text-sm text-popover-foreground shadow-none outline-hidden duration-[var(--d-drift)] ease-[var(--ease-drift)] data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
+          "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) rounded-lg p-2.5 text-sm",
+          floatingSurfaceClasses(),
           className,
         )}
         {...props}
