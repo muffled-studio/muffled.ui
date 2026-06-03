@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Space_Mono } from "next/font/google";
 
+import { ThemeProvider, themeInitScript } from "@/registry/lib/theme-provider";
+
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -46,8 +48,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`h-full antialiased font-sans ${spaceGrotesk.variable} ${spaceMono.variable}`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

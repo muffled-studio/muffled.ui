@@ -13,7 +13,7 @@ export default function LandingPage() {
           we ship ink-and-paper react primitives through a standalone shadcn registry.
         </p>
         <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
-          bunx shadcn@latest add https://ui.muffled.studio/r/surface.json
+          bunx shadcn@latest add @muffled/theme
         </pre>
       </section>
 

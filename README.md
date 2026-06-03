@@ -6,8 +6,17 @@ Design system reference: `design-system/README.md`, tokens in `app/globals.css`.
 
 ## Consumer install
 
+Add to `components.json`:
+
+```json
+"registries": {
+  "@muffled": "https://ui.muffled.studio/r/{name}.json"
+}
+```
+
 ```bash
-bunx shadcn@latest add https://ui.muffled.studio/r/surface.json
+bunx shadcn@latest add @muffled/theme
+bunx shadcn@latest add @muffled/button
 ```
 
 Docs site: [https://ui.muffled.studio/](https://ui.muffled.studio/)

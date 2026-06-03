@@ -4,7 +4,7 @@
   "title": "Surface",
   "description": "Shared className merge and floating panel styles.",
   "dependencies": ["clsx", "tailwind-merge"],
-  "registryDependencies": [],
+  "registryDependencies": ["theme"],
   "files": [
     {
       "path": "registry/lib/surface.ts",
