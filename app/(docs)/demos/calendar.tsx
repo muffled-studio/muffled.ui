@@ -35,9 +35,11 @@ function RangeCalendar() {
 
 export function CalendarDemo() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex w-full flex-col gap-8">
       <SingleCalendar />
-      <RangeCalendar />
+      <div className="w-full overflow-x-auto">
+        <RangeCalendar />
+      </div>
     </div>
   );
 }

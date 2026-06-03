@@ -13,7 +13,7 @@ import {
 
 export function CardDemo() {
   return (
-    <Card className="w-[360px]">
+    <Card className="w-full max-w-[360px]">
       <CardHeader>
         <CardTitle>card title</CardTitle>
         <CardDescription>secondary description text</CardDescription>

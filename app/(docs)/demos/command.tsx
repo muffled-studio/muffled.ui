@@ -13,7 +13,7 @@ import {
 
 export function CommandDemo() {
   return (
-    <Command className="w-[320px]">
+    <Command className="w-full max-w-[320px]">
       <CommandInput placeholder="search…" />
       <CommandList>
         <CommandEmpty>no results.</CommandEmpty>
