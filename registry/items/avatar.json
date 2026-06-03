@@ -1,0 +1,15 @@
+{
+  "name": "avatar",
+  "type": "registry:ui",
+  "title": "Avatar",
+  "description": "User images with fallback initials on ink and paper.",
+  "dependencies": ["radix-ui"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/avatar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/avatar.tsx"
+    }
+  ]
+}

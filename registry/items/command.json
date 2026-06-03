@@ -1,0 +1,15 @@
+{
+  "name": "command",
+  "type": "registry:ui",
+  "title": "Command",
+  "description": "Command palette for search and quick actions. Paper popover, hairline border, no shadow.",
+  "dependencies": ["cmdk", "lucide-react", "radix-ui"],
+  "registryDependencies": ["utils", "dialog", "input-group"],
+  "files": [
+    {
+      "path": "registry/ui/command.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/command.tsx"
+    }
+  ]
+}

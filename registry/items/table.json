@@ -1,0 +1,15 @@
+{
+  "name": "table",
+  "type": "registry:ui",
+  "title": "Table",
+  "description": "Tabular data with hairline borders and no shadows.",
+  "dependencies": [],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/table.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/table.tsx"
+    }
+  ]
+}

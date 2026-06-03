@@ -1,0 +1,15 @@
+{
+  "name": "menubar",
+  "type": "registry:ui",
+  "title": "Menubar",
+  "description": "Application menu bar with nested menus and keyboard shortcuts.",
+  "dependencies": ["radix-ui", "lucide-react"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/menubar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/menubar.tsx"
+    }
+  ]
+}

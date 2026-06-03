@@ -1,0 +1,15 @@
+{
+  "name": "dialog",
+  "type": "registry:ui",
+  "title": "Dialog",
+  "description": "Modal on paper with hairline border, ink scrim, no shadow, no backdrop-blur.",
+  "dependencies": ["radix-ui", "lucide-react"],
+  "registryDependencies": ["utils", "button"],
+  "files": [
+    {
+      "path": "registry/ui/dialog.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/dialog.tsx"
+    }
+  ]
+}

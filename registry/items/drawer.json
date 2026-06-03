@@ -1,0 +1,15 @@
+{
+  "name": "drawer",
+  "type": "registry:ui",
+  "title": "Drawer",
+  "description": "Bottom sheet panel for secondary flows on ink and paper.",
+  "dependencies": ["vaul"],
+  "registryDependencies": ["utils"],
+  "files": [
+    {
+      "path": "registry/ui/drawer.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/drawer.tsx"
+    }
+  ]
+}

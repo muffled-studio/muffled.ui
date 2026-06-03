@@ -1,0 +1,28 @@
+{
+  "name": "sidebar",
+  "type": "registry:ui",
+  "title": "Sidebar",
+  "description": "Collapsible app navigation on ink and paper. Off-canvas mobile sheet, icon collapse, hairline borders.",
+  "dependencies": ["class-variance-authority", "radix-ui", "lucide-react"],
+  "registryDependencies": [
+    "utils",
+    "button",
+    "separator",
+    "tooltip",
+    "input",
+    "skeleton",
+    "use-mobile"
+  ],
+  "files": [
+    {
+      "path": "registry/ui/sheet.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sheet.tsx"
+    },
+    {
+      "path": "registry/ui/sidebar.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/sidebar.tsx"
+    }
+  ]
+}

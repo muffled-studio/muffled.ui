@@ -1,0 +1,15 @@
+{
+  "name": "button-group",
+  "type": "registry:ui",
+  "title": "Button Group",
+  "description": "Grouped actions with shared borders on ink and paper. Horizontal and vertical layouts.",
+  "dependencies": ["class-variance-authority", "radix-ui"],
+  "registryDependencies": ["utils", "separator"],
+  "files": [
+    {
+      "path": "registry/ui/button-group.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/button-group.tsx"
+    }
+  ]
+}

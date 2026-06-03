@@ -1,0 +1,15 @@
+{
+  "name": "form",
+  "type": "registry:ui",
+  "title": "Form",
+  "description": "React Hook Form field wiring with Zod validation. Mono labels, grotesk hints, destructive errors.",
+  "dependencies": ["react-hook-form", "zod", "@hookform/resolvers"],
+  "registryDependencies": ["utils", "label"],
+  "files": [
+    {
+      "path": "registry/ui/form.tsx",
+      "type": "registry:ui",
+      "target": "components/ui/form.tsx"
+    }
+  ]
+}
