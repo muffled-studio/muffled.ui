@@ -20,64 +20,6 @@
           "target": "lib/utils.ts"
         }
       ]
-    },
-    {
-      "name": "button",
-      "type": "registry:ui",
-      "title": "Button",
-      "description": "Ink and paper action button.",
-      "dependencies": [
-        "@radix-ui/react-slot",
-        "class-variance-authority"
-      ],
-      "registryDependencies": [
-        "utils"
-      ],
-      "files": [
-        {
-          "path": "registry/ui/button.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/button.tsx"
-        }
-      ]
-    },
-    {
-      "name": "card",
-      "type": "registry:ui",
-      "title": "Card",
-      "description": "Single-column card primitive.",
-      "dependencies": [
-        "class-variance-authority"
-      ],
-      "registryDependencies": [
-        "utils"
-      ],
-      "files": [
-        {
-          "path": "registry/ui/card.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/card.tsx"
-        }
-      ]
-    },
-    {
-      "name": "input",
-      "type": "registry:ui",
-      "title": "Input",
-      "description": "Minimal text input primitive.",
-      "dependencies": [
-        "class-variance-authority"
-      ],
-      "registryDependencies": [
-        "utils"
-      ],
-      "files": [
-        {
-          "path": "registry/ui/input.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/input.tsx"
-        }
-      ]
     }
   ]
 }

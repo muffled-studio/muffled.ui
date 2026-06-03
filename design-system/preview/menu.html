@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>menu</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .menu {
+    width: 240px;
+    background: var(--paper);
+    border: 0.5px solid rgba(26,26,26,0.56);
+    border-radius: 6px;
+    padding: 4px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+  .item {
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .item:hover, .item.hover { background: rgba(26,26,26,0.06); }
+  .item.active { background: rgba(26,26,26,0.06); }
+  .kbd { font-size: 10px; color: var(--ink-56); }
+  .sep { height: 0; border-top: 0.5px solid rgba(26,26,26,0.12); margin: 4px 0; }
+  .danger { color: #C0392B; }
+  .row { display: flex; gap: 14px; align-items: flex-start; }
+  .meta { font-size: 11px; color: var(--ink-56); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">menu · popover</div>
+  <div class="row">
+    <div class="menu">
+      <div class="item"><span>new project</span><span class="kbd">⌘N</span></div>
+      <div class="item hover"><span>open</span><span class="kbd">⌘O</span></div>
+      <div class="item"><span>duplicate</span><span class="kbd">⌘D</span></div>
+      <div class="sep"></div>
+      <div class="item"><span>rename</span><span class="kbd">⏎</span></div>
+      <div class="item"><span>archive</span><span class="kbd"></span></div>
+      <div class="sep"></div>
+      <div class="item danger"><span>delete</span><span class="kbd">⌫</span></div>
+    </div>
+    <div class="meta">paper bg · 0.5px ink/56 border · 6px radius · no shadow. order on the page does the lifting.</div>
+  </div>
+</div>
+</body></html>

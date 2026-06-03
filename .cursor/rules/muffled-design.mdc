@@ -1,10 +1,14 @@
+---
+description: muffled.studio design system rules
+globs:
+alwaysApply: true
+---
+
 # muffled.studio — design rules
 
-This repo follows the muffled.studio design system. Full reference lives in
-`design-system/README.md` and `design-system/colors_and_type.css`; specimen
-cards are in `design-system/preview/*.html`. The rules below are
-non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadows,
-1px borders, and a gray ramp; we use none of those).
+Full reference: `design-system/README.md`, `design-system/colors_and_type.css`.
+Specimen cards: `design-system/preview/*.html`. Non-negotiable — do not
+reintroduce framework defaults (shadows, 1px borders, gray ramps).
 
 ## The one rule
 **less.** Every element earns its place. No decorative fills, no filler, no slop.
@@ -65,9 +69,3 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 ## Logo
 - `design-system/assets/logo-light.svg` (on paper) · `logo-dark.svg` (on ink).
 - Two colors ever. **Never below 24px.** Clear-space = the cuboid's short side.
-
-## Registry
-
-- Base URL: `https://ui.muffled.studio/`
-- Manifest: `https://ui.muffled.studio/registry.json`
-- Install: `bunx shadcn@latest add https://ui.muffled.studio/r/<name>.json`

@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>states · hover · press · focus</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; align-items: flex-start; }
+  .demo { display:flex; flex-direction: column; gap: 6px; }
+  .b {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    background: #1A1A1A;
+    color: #F5F5F5;
+    border: 0.5px solid #1A1A1A;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .hover { opacity: 0.6; }
+  .press { opacity: 0.4; }
+  .focus { outline: 0.5px solid rgba(26,26,26,0.56); outline-offset: 2px; }
+  .meta { font-size: 10px; color: var(--ink-56); }
+  .name { font-size: 11px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">states · same shape, different alpha</div>
+  <div class="grid">
+    <div class="demo">
+      <div class="b">default</div>
+      <div class="name">rest</div>
+      <div class="meta">opacity 1.0</div>
+    </div>
+    <div class="demo">
+      <div class="b hover">hover</div>
+      <div class="name">hover</div>
+      <div class="meta">opacity 0.6 · 90ms snap</div>
+    </div>
+    <div class="demo">
+      <div class="b press">press</div>
+      <div class="name">press</div>
+      <div class="meta">opacity 0.4 · no scale</div>
+    </div>
+    <div class="demo">
+      <div class="b focus">focus</div>
+      <div class="name">focus</div>
+      <div class="meta">0.5px outline · 2px offset</div>
+    </div>
+  </div>
+</div>
+</body></html>

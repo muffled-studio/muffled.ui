@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>logo · sizes</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .row { display: flex; gap: 24px; align-items: flex-end; padding: 16px 0; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .item img { display:block; }
+  .lbl { font-size: 10px; color: var(--ink-56); }
+  .stop { color: #C0392B; font-weight: 600; }
+  .rule { font-size: 11px; color: var(--ink-56); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">logo · sizes · floor at 24px</div>
+  <div class="row">
+    <div class="item"><img src="../assets/logo-light.svg" width="24" height="24" /><div class="lbl">24 · floor</div></div>
+    <div class="item"><img src="../assets/logo-light.svg" width="32" height="32" /><div class="lbl">32</div></div>
+    <div class="item"><img src="../assets/logo-light.svg" width="48" height="48" /><div class="lbl">48</div></div>
+    <div class="item"><img src="../assets/logo-light.svg" width="72" height="72" /><div class="lbl">72</div></div>
+    <div class="item"><img src="../assets/logo-light.svg" width="96" height="96" /><div class="lbl">96</div></div>
+  </div>
+  <div class="rule">never below <span class="stop">24px</span>. clear-space margin equals the cuboid's short side.</div>
+</div>
+</body></html>

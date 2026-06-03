@@ -7,8 +7,8 @@ const preview: Preview = {
     backgrounds: {
       default: "paper",
       values: [
-        { name: "paper", value: "#f7f7f2" },
-        { name: "ink", value: "#0f0f0c" },
+        { name: "paper", value: "#f5f5f5" },
+        { name: "ink", value: "#1a1a1a" },
       ],
     },
     layout: "centered",

@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>colors — semantic</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .row { display:flex; align-items:center; gap:10px; }
+  .dot { width:14px; height:14px; border-radius:6px; border: 0.5px solid var(--ink-24); flex:none; }
+  .pair { display:flex; flex-direction:column; gap: 6px; }
+  .name { font-size:11px; font-weight:600; }
+  .map { font-size:10px; color: var(--ink-56); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">semantic · light · dark</div>
+  <div class="grid">
+    <div class="pair">
+      <div class="row"><div class="dot" style="background:#F5F5F5"></div><div><div class="name">--bg</div><div class="map">paper · ink</div></div></div>
+      <div class="row"><div class="dot" style="background:#1A1A1A"></div><div><div class="name">--fg-1</div><div class="map">ink · paper</div></div></div>
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.72)"></div><div><div class="name">--fg-2</div><div class="map">ink/72 · paper/72</div></div></div>
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.56)"></div><div><div class="name">--fg-3</div><div class="map">ink/56 · paper/56</div></div></div>
+    </div>
+    <div class="pair">
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.24)"></div><div><div class="name">--border</div><div class="map">ink/24 · paper/24</div></div></div>
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.56)"></div><div><div class="name">--border-strong</div><div class="map">ink/56 · paper/56</div></div></div>
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.06)"></div><div><div class="name">--surface-2</div><div class="map">ink/06 · paper/12</div></div></div>
+      <div class="row"><div class="dot" style="background:rgba(26,26,26,0.12)"></div><div><div class="name">--selection</div><div class="map">ink/12 · paper/24</div></div></div>
+    </div>
+  </div>
+</div>
+</body></html>

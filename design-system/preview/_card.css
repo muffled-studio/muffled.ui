@@ -1,0 +1,46 @@
+/* Shared base for design system preview cards.
+ * Each card targets ~700×N. Minimal decoration; the asset name renders outside.
+ */
+@import url("../colors_and_type.css");
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+.card {
+  width: 700px;
+  background: var(--paper);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card.dark {
+  background: var(--ink);
+  color: var(--paper);
+}
+.row { display: flex; gap: 12px; align-items: stretch; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-56);
+  font-weight: 400;
+}
+.dark .eyebrow { color: var(--paper-56); }
+.mono { font-family: var(--font-mono); }
+.sans { font-family: var(--font-sans); }
+.kv {
+  font-size: 10px;
+  color: var(--ink-56);
+  letter-spacing: 0.02em;
+}
+.dark .kv { color: var(--paper-56); }
+.hair { border-top: 0.5px solid var(--ink-24); }
+.dark .hair { border-top: 0.5px solid var(--paper-24); }

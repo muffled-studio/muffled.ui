@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>borders</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .b { aspect-ratio: 2/1; border-radius: 6px; background: var(--paper); }
+  .b-faint { border: 0.5px solid rgba(26,26,26,0.12); }
+  .b-default { border: 0.5px solid rgba(26,26,26,0.24); }
+  .b-strong { border: 0.5px solid rgba(26,26,26,0.56); }
+  .meta { font-size: 11px; }
+  .name { font-weight: 600; }
+  .val { color: var(--ink-56); font-size: 10px; }
+  .rule { font-size: 11px; color: var(--ink-56); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">borders · 0.5px only</div>
+  <div class="grid">
+    <div class="col"><div class="b b-faint"></div><div class="meta"><div class="name">--border-faint</div><div class="val">ink/12</div></div></div>
+    <div class="col"><div class="b b-default"></div><div class="meta"><div class="name">--border</div><div class="val">ink/24 · default</div></div></div>
+    <div class="col"><div class="b b-strong"></div><div class="meta"><div class="name">--border-strong</div><div class="val">ink/56 · separators</div></div></div>
+  </div>
+  <div class="rule">there is no 1px border. the rule is the rule.</div>
+</div>
+</body></html>

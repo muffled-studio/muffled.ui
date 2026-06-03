@@ -1,0 +1,321 @@
+/* muffled.studio — colors & type tokens
+ * One rule: less.
+ */
+
+/* Both families self-hosted from uploaded files. No CDN. */
+@font-face {
+  font-family: "Space Mono";
+  src: url("fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("fonts/SpaceMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ───────────── Color ───────────── */
+  /* Core — two colors. */
+  --ink: #1A1A1A;        /* foreground on paper */
+  --paper: #F5F5F5;      /* background, foreground on ink */
+
+  /* Utility — used sparingly, never decoratively. */
+  --u-red: #C0392B;      /* error, destructive, stop */
+  --u-green: #27AE60;    /* success, ship, go */
+  --u-amber: #D4830A;    /* warn, in-progress, hold */
+  --u-blue: #2471A3;     /* info, link, reference */
+
+  /* Derived — opacity stops on ink, for hierarchy.
+   * No gray scale. We modulate ink against paper. */
+  --ink-90: rgba(26, 26, 26, 0.90);
+  --ink-72: rgba(26, 26, 26, 0.72);
+  --ink-56: rgba(26, 26, 26, 0.56);
+  --ink-40: rgba(26, 26, 26, 0.40);
+  --ink-24: rgba(26, 26, 26, 0.24);
+  --ink-12: rgba(26, 26, 26, 0.12);
+  --ink-06: rgba(26, 26, 26, 0.06);
+
+  --paper-90: rgba(245, 245, 245, 0.90);
+  --paper-72: rgba(245, 245, 245, 0.72);
+  --paper-56: rgba(245, 245, 245, 0.56);
+  --paper-40: rgba(245, 245, 245, 0.40);
+  --paper-24: rgba(245, 245, 245, 0.24);
+  --paper-12: rgba(245, 245, 245, 0.12);
+
+  /* Semantic — light mode. */
+  --bg: var(--paper);
+  --fg: var(--ink);
+  --fg-1: var(--ink);          /* primary text */
+  --fg-2: var(--ink-72);       /* secondary text */
+  --fg-3: var(--ink-56);       /* tertiary / labels */
+  --fg-4: var(--ink-40);       /* placeholder, decorative */
+  --border: var(--ink-24);     /* default borders, 0.5px */
+  --border-strong: var(--ink-56);
+  --border-faint: var(--ink-12);
+  --surface-1: var(--paper);   /* base */
+  --surface-2: var(--ink-06);  /* sunken / hover wash */
+  --selection: var(--ink-12);
+
+  /* ───────────── Type ───────────── */
+  /* Two families.
+   * Space Mono  — headings, eyebrows, code. Stamped, mechanical. Ships 400 + 700 only.
+   * Space Grotesk — body, labels, UI. Humanist, quiet, reads long.
+   */
+  --font-mono: "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* Mono only has two real weights — don't ask it for more. */
+  --fw-mono-regular: 400;
+  --fw-mono-bold: 700;
+  /* Sans carries the nuance. */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Sizes — sparing scale. Mono runs wide; we read it tight. */
+  --t-xs: 11px;
+  --t-sm: 12px;
+  --t-base: 13px;
+  --t-md: 15px;
+  --t-lg: 18px;
+  --t-xl: 22px;
+  --t-2xl: 28px;
+  --t-3xl: 36px;
+  --t-4xl: 48px;
+  --t-5xl: 64px;
+
+  /* Line-height — mono needs air. */
+  --lh-tight: 1.15;
+  --lh-snug: 1.30;
+  --lh-base: 1.55;
+  --lh-loose: 1.70;
+
+  /* Tracking — mono headings get a touch tighter; sans body sits neutral. */
+  --tr-tight: -0.04em;
+  --tr-snug: -0.02em;
+  --tr-base: 0;
+  --tr-wide: 0.04em;
+  --tr-eyebrow: 0.12em;
+
+  /* ───────────── Spacing — 4px base ───────────── */
+  --s-0: 0;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+
+  /* ───────────── Radius ───────────── */
+  --r-0: 0;
+  --r: 6px;            /* default. held loosely. */
+  --r-pill: 999px;     /* only when content is round (avatars, dots) */
+
+  /* ───────────── Borders ───────────── */
+  --bw: 0.5px;         /* the only stroke we use */
+
+  /* ───────────── Motion ───────────── */
+  /* drift = transitions (state, mount). snap = interactions (press, release). */
+  /* nothing bounces. */
+  --ease-drift: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-snap: cubic-bezier(0.2, 0, 0, 1);
+  --d-drift: 220ms;
+  --d-snap: 90ms;
+  --d-still: 0ms;
+}
+
+/* ───────────── Dark mode — invert. */
+[data-theme="dark"],
+.theme-dark {
+  --bg: var(--ink);
+  --fg: var(--paper);
+  --fg-1: var(--paper);
+  --fg-2: var(--paper-72);
+  --fg-3: var(--paper-56);
+  --fg-4: var(--paper-40);
+  --border: var(--paper-24);
+  --border-strong: var(--paper-56);
+  --border-faint: var(--paper-12);
+  --surface-1: var(--ink);
+  --surface-2: var(--paper-12);
+  --selection: var(--paper-24);
+}
+
+/* ───────────── Base. */
+html, body {
+  background: var(--bg);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--t-base);
+  line-height: var(--lh-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--selection); color: var(--fg-1); }
+
+/* ───────────── Semantic typography. */
+.h1, h1 {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-regular);
+  font-size: var(--t-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-tight);
+  margin: 0;
+}
+.h2, h2 {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-regular);
+  font-size: var(--t-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-snug);
+  margin: 0;
+}
+.h3, h3 {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-regular);
+  font-size: var(--t-2xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-snug);
+  margin: 0;
+}
+.h4, h4 {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-bold);
+  font-size: var(--t-xl);
+  line-height: var(--lh-snug);
+  margin: 0;
+}
+.h5, h5 {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-bold);
+  font-size: var(--t-lg);
+  line-height: var(--lh-snug);
+  margin: 0;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-regular);
+  font-size: var(--t-xs);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+.p, p {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--t-base);
+  line-height: var(--lh-base);
+  margin: 0;
+  text-wrap: pretty;
+}
+.small, small {
+  font-family: var(--font-sans);
+  font-size: var(--t-sm);
+  line-height: var(--lh-base);
+  color: var(--fg-2);
+}
+.label {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--t-sm);
+  letter-spacing: var(--tr-wide);
+  text-transform: lowercase;
+  color: var(--fg-2);
+}
+.code, code, pre {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-mono-regular);
+  font-size: var(--t-sm);
+  background: var(--surface-2);
+  border: var(--bw) solid var(--border-faint);
+  border-radius: var(--r);
+  padding: 0 4px;
+}
+pre {
+  padding: var(--s-3) var(--s-4);
+  line-height: var(--lh-base);
+  overflow-x: auto;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: var(--bw);
+  text-underline-offset: 3px;
+  transition: opacity var(--d-snap) var(--ease-snap);
+}
+a:hover { opacity: 0.6; }
+a:active { opacity: 0.4; }
+
+/* ───────────── Utilities. */
+.u-mono { font-family: var(--font-mono); }
+.u-sans { font-family: var(--font-sans); }
+.u-fg-1 { color: var(--fg-1); }
+.u-fg-2 { color: var(--fg-2); }
+.u-fg-3 { color: var(--fg-3); }
+.u-fg-4 { color: var(--fg-4); }

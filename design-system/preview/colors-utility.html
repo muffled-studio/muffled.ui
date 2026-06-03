@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>colors — utility</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display:grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .swatch { height: 64px; border-radius: 6px; border: 0.5px solid var(--ink-24); }
+  .meta { display:flex; flex-direction:column; gap:2px; font-size:10px; }
+  .name { font-weight:600; letter-spacing:0.02em; }
+  .hex { color: var(--ink-56); }
+  .role { color: var(--ink-56); text-transform:lowercase; letter-spacing:0.04em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">utility · functional, not decorative</div>
+  <div class="grid">
+    <div class="col">
+      <div class="swatch" style="background:#C0392B"></div>
+      <div class="meta"><span class="name">red</span><span class="hex">#C0392B</span><span class="role">stop · error</span></div>
+    </div>
+    <div class="col">
+      <div class="swatch" style="background:#27AE60"></div>
+      <div class="meta"><span class="name">green</span><span class="hex">#27AE60</span><span class="role">go · success</span></div>
+    </div>
+    <div class="col">
+      <div class="swatch" style="background:#D4830A"></div>
+      <div class="meta"><span class="name">amber</span><span class="hex">#D4830A</span><span class="role">hold · warn</span></div>
+    </div>
+    <div class="col">
+      <div class="swatch" style="background:#2471A3"></div>
+      <div class="meta"><span class="name">blue</span><span class="hex">#2471A3</span><span class="role">ref · info</span></div>
+    </div>
+  </div>
+</div>
+</body></html>
