@@ -3,7 +3,7 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const storiesDir = join(root, "stories");
-const demosDir = join(root, "demos");
+const demosDir = join(root, "app", "(docs)", "demos");
 
 mkdirSync(demosDir, { recursive: true });
 

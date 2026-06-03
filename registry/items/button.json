@@ -4,7 +4,7 @@
   "title": "Button",
   "description": "Primary actions on ink and paper. Opacity hover and press, hairline borders, no shadows.",
   "dependencies": ["class-variance-authority", "radix-ui"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/button.tsx",

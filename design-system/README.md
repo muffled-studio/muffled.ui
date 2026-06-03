@@ -18,9 +18,7 @@ No codebase, Figma file, or product screens were attached. The voice, palette, t
 ```
 README.md                  ← this file
 SKILL.md                   ← claude-code skill manifest
-colors_and_type.css        ← all design tokens (CSS vars)
-assets/                    ← logos
-preview/                   ← Design System tab cards
+assets/                    ← logos (see also public/logo-*.svg)
 ```
 
 There are no `ui_kits/` or `slides/` yet — no product surfaces or deck templates were provided.

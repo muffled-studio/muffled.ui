@@ -4,7 +4,7 @@
   "title": "Sheet",
   "description": "Edge panel on paper with hairline border and no shadow.",
   "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["utils", "button"],
+  "registryDependencies": ["surface", "button"],
   "files": [
     {
       "path": "registry/ui/sheet.tsx",

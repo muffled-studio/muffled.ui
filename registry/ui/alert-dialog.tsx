@@ -3,7 +3,7 @@
 import * as React from "react";
 import { AlertDialog as AlertDialogPrimitive } from "radix-ui";
 
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/registry/lib/surface";
 import { modalSurfaceClasses } from "@/registry/lib/surface";
 import { Button } from "@/registry/ui/button";
 

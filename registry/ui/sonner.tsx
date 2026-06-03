@@ -8,7 +8,7 @@ import {
   TriangleAlertIcon,
 } from "lucide-react"
 
-import { cn } from "@/registry/lib/utils"
+import { cn } from "@/registry/lib/surface"
 import { Spinner } from "@/registry/ui/spinner"
 
 const Toaster = ({ theme = "light", ...props }: ToasterProps) => {

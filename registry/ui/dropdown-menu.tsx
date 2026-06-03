@@ -3,7 +3,7 @@
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
 import type * as React from "react";
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/registry/lib/surface";
 import { floatingSurfaceClasses } from "@/registry/lib/surface";
 
 function DropdownMenu({

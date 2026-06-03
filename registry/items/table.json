@@ -4,7 +4,7 @@
   "title": "Table",
   "description": "Tabular data with hairline borders and no shadows.",
   "dependencies": [],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/table.tsx",

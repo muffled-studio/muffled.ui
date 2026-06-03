@@ -4,7 +4,7 @@
   "title": "Progress",
   "description": "Determinate progress bar on ink and paper.",
   "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/progress.tsx",

@@ -4,7 +4,7 @@
   "title": "Scroll Area",
   "description": "Custom-styled scrollable regions with vertical and horizontal scrollbars.",
   "dependencies": ["radix-ui"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/scroll-area.tsx",

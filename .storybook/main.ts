@@ -6,6 +6,10 @@ const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
 const config: StorybookConfig = {
   stories: ["../stories/**/*.stories.@(ts|tsx)"],
+  staticDirs: ["./static"],
+  typescript: {
+    reactDocgen: "react-docgen",
+  },
   addons: ["@storybook/addon-essentials"],
   framework: {
     name: "@storybook/react-vite",
@@ -17,6 +21,12 @@ const config: StorybookConfig = {
 
     return {
       ...viteConfig,
+      base: "/storybook/",
+      build: {
+        ...viteConfig.build,
+        watch: null,
+        chunkSizeWarningLimit: 1000,
+      },
       esbuild: {
         ...viteConfig.esbuild,
         jsx: "automatic",

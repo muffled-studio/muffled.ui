@@ -12,7 +12,7 @@ const preview: Preview = {
         { name: "ink", value: "#1a1a1a" },
       ],
     },
-    layout: "centered",
+    layout: "fullscreen",
     controls: {
       matchers: {
         color: /(background|color)$/i,

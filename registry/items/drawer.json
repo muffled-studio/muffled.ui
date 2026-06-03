@@ -4,7 +4,7 @@
   "title": "Drawer",
   "description": "Bottom sheet panel for secondary flows on ink and paper.",
   "dependencies": ["vaul"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/drawer.tsx",

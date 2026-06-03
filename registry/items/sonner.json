@@ -4,7 +4,7 @@
   "title": "Sonner",
   "description": "Toast notifications on ink and paper. Hairline borders, no shadows.",
   "dependencies": ["sonner", "lucide-react"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/sonner.tsx",

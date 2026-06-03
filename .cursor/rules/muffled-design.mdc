@@ -6,8 +6,8 @@ alwaysApply: true
 
 # muffled.studio — design rules
 
-Full reference: `design-system/README.md`, `design-system/colors_and_type.css`.
-Specimen cards: `design-system/preview/*.html`. Non-negotiable — do not
+Full reference: `design-system/README.md`, `app/globals.css`.
+Non-negotiable — do not
 reintroduce framework defaults (shadows, 1px borders, gray ramps).
 
 ## The one rule

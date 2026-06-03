@@ -4,7 +4,7 @@
   "title": "Empty",
   "description": "Empty state layout with icon, title, description, and optional content.",
   "dependencies": ["class-variance-authority"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/empty.tsx",

@@ -4,7 +4,7 @@
   "title": "Breadcrumb",
   "description": "Hierarchical page trail with links, separators, and ellipsis.",
   "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["utils"],
+  "registryDependencies": ["surface"],
   "files": [
     {
       "path": "registry/ui/breadcrumb.tsx",

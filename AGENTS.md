@@ -1,8 +1,7 @@
 # muffled.studio — design rules
 
 This repo follows the muffled.studio design system. Full reference lives in
-`design-system/README.md` and `design-system/colors_and_type.css`; specimen
-cards are in `design-system/preview/*.html`. The rules below are
+`design-system/README.md` and `app/globals.css`. The rules below are
 non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadows,
 1px borders, and a gray ramp; we use none of those).
 
@@ -43,8 +42,7 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 ## Tailwind · tokens · utilities
 - Prefer **theme tokens and named utilities** over arbitrary values. Do not use
   `property-[value]` / `property-[var(--x)]` unless the value is genuinely one-off.
-- Design tokens live in `app/globals.css` (`@theme inline`) and
-  `design-system/colors_and_type.css`. Add missing tokens there first, then use the
+- Design tokens live in `app/globals.css` (`@theme inline`). Add missing tokens there first, then use the
   generated class (`border`, `border-border-strong`, `h-hairline`, `duration-drift`, …).
 - Floating surfaces (popover, menu, select dropdown) share `floatingSurfaceClasses()`
   from `registry/lib/surface.ts` — extend that, do not restyle each component.

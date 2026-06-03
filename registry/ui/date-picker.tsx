@@ -4,7 +4,7 @@ import * as React from "react"
 import { format } from "date-fns"
 import { ChevronDownIcon } from "lucide-react"
 
-import { cn } from "@/registry/lib/utils"
+import { cn } from "@/registry/lib/surface"
 import { Button } from "@/registry/ui/button"
 import { Calendar } from "@/registry/ui/calendar"
 import {

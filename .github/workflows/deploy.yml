@@ -32,17 +32,16 @@ jobs:
       - name: Install
         run: bun install --frozen-lockfile
 
-      - name: Build docs
-        run: bun run build
-
       - name: Build storybook
         run: bun run build-storybook
+
+      - name: Build docs
+        run: bun run build
 
       - name: Merge artifacts
         run: |
           mkdir -p site
           cp -R out/. site/
-          cp -R public/. site/
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3

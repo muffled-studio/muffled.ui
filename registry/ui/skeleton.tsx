@@ -1,6 +1,6 @@
 import type * as React from "react";
 
-import { cn } from "@/registry/lib/utils";
+import { cn } from "@/registry/lib/surface";
 
 function Skeleton({ className, ...props }: React.ComponentProps<"div">) {
   return (
