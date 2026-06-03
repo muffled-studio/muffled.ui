@@ -1,6 +1,8 @@
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
+import { cssToRegistryObject } from "./css-to-registry-object.ts";
+
 type RegistryFile = {
   path: string;
   type: string;
@@ -14,7 +16,8 @@ type RegistryItem = {
   description?: string;
   dependencies?: string[];
   registryDependencies?: string[];
-  files: RegistryFile[];
+  files?: RegistryFile[];
+  css?: Record<string, unknown>;
 };
 
 type RegistryManifest = {
@@ -27,16 +30,20 @@ type RegistryManifest = {
 const root = process.cwd();
 const manifestPath = resolve(root, "registry.json");
 const outputRoot = resolve(root, "public", "r");
+const themeCssPath = resolve(root, "registry/styles/muffled-theme.css");
 
 const manifestRaw = await readFile(manifestPath, "utf8");
 const manifest = JSON.parse(manifestRaw) as RegistryManifest;
+
+const themeCss = await readFile(themeCssPath, "utf8");
+const themeRegistryCss = cssToRegistryObject(themeCss);
 
 await rm(outputRoot, { recursive: true, force: true });
 await mkdir(outputRoot, { recursive: true });
 
 for (const item of manifest.items) {
   const files = await Promise.all(
-    item.files.map(async (file) => {
+    (item.files ?? []).map(async (file) => {
       const absPath = resolve(root, file.path);
       const content = await readFile(absPath, "utf8");
 
@@ -47,11 +54,15 @@ for (const item of manifest.items) {
     }),
   );
 
-  const payload = {
+  const payload: RegistryItem & { $schema: string } = {
     $schema: "https://ui.shadcn.com/schema/registry-item.json",
     ...item,
     files,
   };
+
+  if (item.name === "theme") {
+    payload.css = themeRegistryCss;
+  }
 
   const itemPath = resolve(outputRoot, `${item.name}.json`);
   await writeFile(itemPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");

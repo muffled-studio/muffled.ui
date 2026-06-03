@@ -1,0 +1,35 @@
+{
+  "name": "theme",
+  "type": "registry:theme",
+  "title": "Theme",
+  "description": "muffled.studio ink-and-paper tokens, tailwind theme, and base styles. Wire Space Grotesk and Space Mono as --font-sans and --font-mono.",
+  "dependencies": ["tw-animate-css"],
+  "registryDependencies": [],
+  "files": [],
+  "fonts": [
+    {
+      "name": "font-sans",
+      "type": "registry:font",
+      "font": {
+        "family": "Space Grotesk, ui-sans-serif, system-ui, sans-serif",
+        "variable": "--font-sans",
+        "provider": "google",
+        "import": "Space_Grotesk",
+        "weight": ["300", "400", "500", "600", "700"],
+        "subsets": ["latin"]
+      }
+    },
+    {
+      "name": "font-mono",
+      "type": "registry:font",
+      "font": {
+        "family": "Space Mono, ui-monospace, monospace",
+        "variable": "--font-mono",
+        "provider": "google",
+        "import": "Space_Mono",
+        "weight": ["400", "700"],
+        "subsets": ["latin"]
+      }
+    }
+  ]
+}

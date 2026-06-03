@@ -88,4 +88,6 @@ non-negotiable — do not reintroduce framework defaults (shadcn/MUI ship shadow
 
 - Base URL: `https://ui.muffled.studio/`
 - Manifest: `https://ui.muffled.studio/registry.json`
-- Install: `bunx shadcn@latest add https://ui.muffled.studio/r/<name>.json`
+- Namespace: `"@muffled": "https://ui.muffled.studio/r/{name}.json"` in consumer `components.json`
+- Theme: `bunx shadcn@latest add @muffled/theme`
+- Components: `bunx shadcn@latest add @muffled/<name>`
