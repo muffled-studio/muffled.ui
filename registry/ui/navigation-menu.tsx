@@ -3,6 +3,7 @@ import { cva } from "class-variance-authority"
 import { NavigationMenu as NavigationMenuPrimitive } from "radix-ui"
 
 import { cn } from "@/registry/lib/utils"
+import { floatingSurfaceClasses } from "@/registry/lib/surface"
 import { ChevronDownIcon } from "lucide-react"
 
 function NavigationMenu({
@@ -59,7 +60,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group/navigation-menu-trigger inline-flex h-9 w-max items-center justify-center rounded-lg px-2.5 py-1.5 text-sm font-medium outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 focus-visible:outline focus-visible:outline-[0.5px] focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] disabled:pointer-events-none disabled:opacity-50 data-popup-open:opacity-60 data-open:opacity-60"
+  "group/navigation-menu-trigger inline-flex h-9 w-max items-center justify-center rounded-lg px-2.5 py-1.5 text-sm font-medium outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] disabled:pointer-events-none disabled:opacity-40 data-popup-open:opacity-60 data-open:opacity-60"
 )
 
 function NavigationMenuTrigger({
@@ -87,7 +88,7 @@ function NavigationMenuContent({
     <NavigationMenuPrimitive.Content
       data-slot="navigation-menu-content"
       className={cn(
-        "top-0 left-0 w-full p-1 duration-[var(--d-drift)] ease-[var(--ease-drift)] group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:mt-1.5 group-data-[viewport=false]/navigation-menu:overflow-hidden group-data-[viewport=false]/navigation-menu:rounded-lg group-data-[viewport=false]/navigation-menu:border-[0.5px] group-data-[viewport=false]/navigation-menu:border-border group-data-[viewport=false]/navigation-menu:bg-popover group-data-[viewport=false]/navigation-menu:text-popover-foreground group-data-[viewport=false]/navigation-menu:shadow-none data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:animate-out data-[motion^=to-]:fade-out **:data-[slot=navigation-menu-link]:focus:ring-0 **:data-[slot=navigation-menu-link]:focus:outline-none md:absolute md:w-auto group-data-[viewport=false]/navigation-menu:data-open:animate-in group-data-[viewport=false]/navigation-menu:data-open:fade-in-0 group-data-[viewport=false]/navigation-menu:data-open:zoom-in-95 group-data-[viewport=false]/navigation-menu:data-closed:animate-out group-data-[viewport=false]/navigation-menu:data-closed:fade-out-0 group-data-[viewport=false]/navigation-menu:data-closed:zoom-out-95",
+        "top-0 left-0 w-full p-1 duration-[var(--d-drift)] ease-[var(--ease-drift)] group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:mt-1.5 group-data-[viewport=false]/navigation-menu:overflow-hidden group-data-[viewport=false]/navigation-menu:rounded-lg group-data-[viewport=false]/navigation-menu:border group-data-[viewport=false]/navigation-menu:border-border-strong group-data-[viewport=false]/navigation-menu:bg-popover group-data-[viewport=false]/navigation-menu:text-popover-foreground group-data-[viewport=false]/navigation-menu:shadow-none data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:animate-out data-[motion^=to-]:fade-out **:data-[slot=navigation-menu-link]:focus:ring-0 **:data-[slot=navigation-menu-link]:focus:outline-none md:absolute md:w-auto group-data-[viewport=false]/navigation-menu:data-open:animate-in group-data-[viewport=false]/navigation-menu:data-open:fade-in-0 group-data-[viewport=false]/navigation-menu:data-closed:animate-out group-data-[viewport=false]/navigation-menu:data-closed:fade-out-0",
         className
       )}
       {...props}
@@ -108,7 +109,8 @@ function NavigationMenuViewport({
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
         className={cn(
-          "origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-lg border-[0.5px] border-border bg-popover text-popover-foreground shadow-none duration-[var(--d-drift)] ease-[var(--ease-drift)] md:w-(--radix-navigation-menu-viewport-width) data-open:animate-in data-open:zoom-in-90 data-closed:animate-out data-closed:zoom-out-90",
+          "origin-top-center relative mt-1.5 h-(--radix-navigation-menu-viewport-height) w-full overflow-hidden rounded-lg md:w-(--radix-navigation-menu-viewport-width)",
+          floatingSurfaceClasses(),
           className
         )}
         {...props}
@@ -125,7 +127,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "flex items-center gap-2 rounded-lg p-2 text-sm outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 focus-visible:outline focus-visible:outline-[0.5px] focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] in-data-[slot=navigation-menu-content]:rounded-md data-active:opacity-60 [&_svg:not([class*='size-'])]:size-4",
+        "flex items-center gap-2 rounded-lg p-2 text-sm outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] in-data-[slot=navigation-menu-content]:rounded-md data-active:opacity-60 [&_svg:not([class*='size-'])]:size-4",
         className
       )}
       {...props}

@@ -9,7 +9,7 @@ export function LabelDemo() {
         <Label htmlFor="demo-name">name</Label>
         <input
           id="demo-name"
-          className="rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline-[0.5px] focus-visible:outline-offset-2 focus-visible:outline-ring"
+          className="rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground outline-none focus-visible:outline focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring"
           placeholder="value"
         />
       </div>
@@ -18,7 +18,7 @@ export function LabelDemo() {
         <input
           id="demo-disabled"
           disabled
-          className="rounded-md border-[0.5px] border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
+          className="rounded-md border border-border bg-background px-2.5 py-2 font-mono text-xs text-foreground opacity-40 outline-none"
         />
       </div>
     </div>

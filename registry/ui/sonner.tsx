@@ -34,18 +34,18 @@ const Toaster = ({ theme = "light", ...props }: ToasterProps) => {
       toastOptions={{
         classNames: {
           toast: cn(
-            "group/toast pointer-events-auto w-full rounded-md border-[0.5px] border-border bg-popover p-4 font-sans text-sm text-popover-foreground shadow-none"
+            "group/toast pointer-events-auto w-full rounded-md border border-border bg-popover p-4 font-sans text-sm text-popover-foreground shadow-none"
           ),
           title: "font-sans text-sm font-medium text-foreground",
           description: "font-sans text-sm text-muted-foreground",
           actionButton: cn(
-            "inline-flex h-7 shrink-0 items-center justify-center rounded-md border-[0.5px] border-border bg-background px-2.5 font-sans text-sm font-medium text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
+            "inline-flex h-7 shrink-0 items-center justify-center rounded-md border border-border bg-background px-2.5 font-sans text-sm font-medium text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
           ),
           cancelButton: cn(
-            "inline-flex h-7 shrink-0 items-center justify-center rounded-md border-[0.5px] border-border bg-background px-2.5 font-sans text-sm font-medium text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
+            "inline-flex h-7 shrink-0 items-center justify-center rounded-md border border-border bg-background px-2.5 font-sans text-sm font-medium text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
           ),
           closeButton: cn(
-            "absolute right-2 top-2 rounded-md border-[0.5px] border-transparent text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
+            "absolute right-2 top-2 rounded-md border border-transparent text-foreground transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] hover:opacity-60 active:opacity-40"
           ),
         },
       }}

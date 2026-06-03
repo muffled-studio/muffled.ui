@@ -6,7 +6,7 @@ function Table({ className, ...props }: React.ComponentProps<"table">) {
   return (
     <div
       data-slot="table-container"
-      className="relative w-full overflow-x-auto rounded-md border-[0.5px] border-border"
+      className="relative w-full overflow-x-auto rounded-md border border-border"
     >
       <table
         data-slot="table"
@@ -21,7 +21,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
   return (
     <thead
       data-slot="table-header"
-      className={cn("[&_tr]:border-b-[0.5px] [&_tr]:border-border", className)}
+      className={cn("[&_tr]:border-b [&_tr]:border-border", className)}
       {...props}
     />
   );
@@ -42,7 +42,7 @@ function TableFooter({ className, ...props }: React.ComponentProps<"tfoot">) {
     <tfoot
       data-slot="table-footer"
       className={cn(
-        "border-t-[0.5px] border-border bg-muted/50 font-medium [&>tr]:last:border-b-0",
+        "border-t border-border bg-muted/50 font-medium [&>tr]:last:border-b-0",
         className,
       )}
       {...props}
@@ -55,7 +55,7 @@ function TableRow({ className, ...props }: React.ComponentProps<"tr">) {
     <tr
       data-slot="table-row"
       className={cn(
-        "border-b-[0.5px] border-border transition-colors hover:bg-secondary has-aria-expanded:bg-secondary data-[state=selected]:bg-secondary",
+        "border-b border-border transition-colors hover:bg-secondary has-aria-expanded:bg-secondary data-[state=selected]:bg-secondary",
         className,
       )}
       {...props}
