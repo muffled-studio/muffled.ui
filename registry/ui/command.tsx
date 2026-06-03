@@ -52,7 +52,10 @@ function CommandDialog({
         <DialogDescription>{description}</DialogDescription>
       </DialogHeader>
       <DialogContent
-        className={cn("overflow-hidden p-0 shadow-none", className)}
+        className={cn(
+          "overflow-hidden p-0 shadow-none duration-[var(--d-drift)] ease-[var(--ease-drift)] data-open:[--tw-enter-scale:1] data-closed:[--tw-exit-scale:1]",
+          className,
+        )}
         showCloseButton={showCloseButton}
       >
         {children}
@@ -158,7 +161,7 @@ function CommandItem({
     >
       {children}
       <CheckIcon
-        className="ml-auto opacity-0 group-data-[selected=true]/command-item:opacity-100"
+        className="ml-auto opacity-0 transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] group-data-[selected=true]/command-item:opacity-100"
         strokeWidth={1.5}
       />
     </CommandPrimitive.Item>
