@@ -38,11 +38,12 @@ add the registry to `components.json`:
 }
 ```
 
-pull the theme first, then whatever we need:
+pull the theme first, then whatever we need. use the `@muffled/<name>` namespace on the CLI — registry manifests declare namespaced `registryDependencies` (e.g. `@muffled/surface`, not bare `surface`), so the resolver stays on `ui.muffled.studio` instead of `ui.shadcn.com`.
 
 ```bash
 bunx shadcn@latest add @muffled/theme
 bunx shadcn@latest add @muffled/button
+bunx shadcn@latest add @muffled/input-group
 ```
 
 full catalog: [ui.muffled.studio](https://ui.muffled.studio/)

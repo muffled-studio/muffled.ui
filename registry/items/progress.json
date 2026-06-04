@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Progress",
   "description": "Determinate progress bar on ink and paper.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/progress.tsx",

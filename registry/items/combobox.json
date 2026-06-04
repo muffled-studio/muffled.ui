@@ -3,8 +3,15 @@
   "type": "registry:ui",
   "title": "Combobox",
   "description": "Autocomplete input with filterable suggestions on paper, hairline border, no shadow.",
-  "dependencies": ["@base-ui/react", "lucide-react"],
-  "registryDependencies": ["surface", "button", "input-group"],
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/button",
+    "@muffled/input-group"
+  ],
   "files": [
     {
       "path": "registry/ui/combobox.tsx",

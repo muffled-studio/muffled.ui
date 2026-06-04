@@ -28,7 +28,7 @@ export default async function ComponentPage({
     notFound();
   }
 
-  const installCommand = `bunx shadcn@latest add https://ui.muffled.studio/r/${item.name}.json`;
+  const installCommand = `bunx shadcn@latest add @muffled/${item.name}`;
   const registryDeps = item.registryDependencies ?? [];
   const deps = item.dependencies ?? [];
 

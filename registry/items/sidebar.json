@@ -3,15 +3,19 @@
   "type": "registry:ui",
   "title": "Sidebar",
   "description": "Collapsible app navigation on ink and paper. Off-canvas mobile sheet, icon collapse, hairline borders.",
-  "dependencies": ["class-variance-authority", "radix-ui", "lucide-react"],
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui",
+    "lucide-react"
+  ],
   "registryDependencies": [
-    "surface",
-    "button",
-    "separator",
-    "tooltip",
-    "input",
-    "skeleton",
-    "use-mobile"
+    "@muffled/surface",
+    "@muffled/button",
+    "@muffled/separator",
+    "@muffled/tooltip",
+    "@muffled/input",
+    "@muffled/skeleton",
+    "@muffled/use-mobile"
   ],
   "files": [
     {

@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Dropdown Menu",
   "description": "Contextual menu on paper with hairline border, no shadow, opacity states.",
-  "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/dropdown-menu.tsx",

@@ -3,7 +3,9 @@
   "type": "registry:ui",
   "title": "Kbd",
   "description": "Keyboard key labels for shortcuts and hints.",
-  "registryDependencies": ["surface"],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/kbd.tsx",

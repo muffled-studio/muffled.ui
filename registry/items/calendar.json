@@ -3,8 +3,14 @@
   "type": "registry:ui",
   "title": "Calendar",
   "description": "Date picker grid on ink and paper. Range and single selection via react-day-picker.",
-  "dependencies": ["react-day-picker", "date-fns"],
-  "registryDependencies": ["surface", "button"],
+  "dependencies": [
+    "react-day-picker",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/button"
+  ],
   "files": [
     {
       "path": "registry/ui/calendar.tsx",

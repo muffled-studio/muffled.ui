@@ -13,7 +13,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -32,7 +32,7 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -51,8 +51,8 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface",
-        "button"
+        "@muffled/surface",
+        "@muffled/button"
       ],
       "files": [
         {
@@ -71,7 +71,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -91,7 +91,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -111,7 +111,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -131,7 +131,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -151,8 +151,8 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface",
-        "separator"
+        "@muffled/surface",
+        "@muffled/separator"
       ],
       "files": [
         {
@@ -172,8 +172,8 @@
         "date-fns"
       ],
       "registryDependencies": [
-        "surface",
-        "button"
+        "@muffled/surface",
+        "@muffled/button"
       ],
       "files": [
         {
@@ -190,7 +190,7 @@
       "description": "Surface container on paper and ink. Hairline border, 6px radius, no shadow.",
       "dependencies": [],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -210,7 +210,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -247,9 +247,9 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button",
-        "input-group"
+        "@muffled/surface",
+        "@muffled/button",
+        "@muffled/input-group"
       ],
       "files": [
         {
@@ -270,9 +270,9 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface",
-        "dialog",
-        "input-group"
+        "@muffled/surface",
+        "@muffled/dialog",
+        "@muffled/input-group"
       ],
       "files": [
         {
@@ -291,8 +291,8 @@
         "@tanstack/react-table"
       ],
       "registryDependencies": [
-        "surface",
-        "table"
+        "@muffled/surface",
+        "@muffled/table"
       ],
       "files": [
         {
@@ -312,10 +312,10 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button",
-        "calendar",
-        "popover"
+        "@muffled/surface",
+        "@muffled/button",
+        "@muffled/calendar",
+        "@muffled/popover"
       ],
       "files": [
         {
@@ -335,8 +335,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button"
+        "@muffled/surface",
+        "@muffled/button"
       ],
       "files": [
         {
@@ -355,7 +355,7 @@
         "vaul"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -375,7 +375,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -394,7 +394,7 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -413,9 +413,9 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "label",
-        "separator",
-        "input"
+        "@muffled/label",
+        "@muffled/separator",
+        "@muffled/input"
       ],
       "files": [
         {
@@ -436,8 +436,8 @@
         "@hookform/resolvers"
       ],
       "registryDependencies": [
-        "surface",
-        "label"
+        "@muffled/surface",
+        "@muffled/label"
       ],
       "files": [
         {
@@ -456,7 +456,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -472,7 +472,7 @@
       "title": "Input",
       "description": "Text fields in Space Mono. Hairline border, ink focus border, no shadows.",
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -491,10 +491,10 @@
         "class-variance-authority"
       ],
       "registryDependencies": [
-        "surface",
-        "button",
-        "input",
-        "textarea"
+        "@muffled/surface",
+        "@muffled/button",
+        "@muffled/input",
+        "@muffled/textarea"
       ],
       "files": [
         {
@@ -514,7 +514,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -534,8 +534,8 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface",
-        "separator"
+        "@muffled/surface",
+        "@muffled/separator"
       ],
       "files": [
         {
@@ -551,7 +551,7 @@
       "title": "Kbd",
       "description": "Keyboard key labels for shortcuts and hints.",
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -570,7 +570,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -590,7 +590,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -611,7 +611,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -630,8 +630,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button"
+        "@muffled/surface",
+        "@muffled/button"
       ],
       "files": [
         {
@@ -650,7 +650,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -669,7 +669,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -688,7 +688,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -707,7 +707,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -727,7 +727,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -746,7 +746,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -766,8 +766,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button"
+        "@muffled/surface",
+        "@muffled/button"
       ],
       "files": [
         {
@@ -788,13 +788,13 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface",
-        "button",
-        "separator",
-        "tooltip",
-        "input",
-        "skeleton",
-        "use-mobile"
+        "@muffled/surface",
+        "@muffled/button",
+        "@muffled/separator",
+        "@muffled/tooltip",
+        "@muffled/input",
+        "@muffled/skeleton",
+        "@muffled/use-mobile"
       ],
       "files": [
         {
@@ -815,7 +815,7 @@
       "title": "Skeleton",
       "description": "Loading placeholders using ink/06 and paper/12 surface washes. No pulse or shimmer.",
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -834,7 +834,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -854,7 +854,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -873,7 +873,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -893,7 +893,7 @@
         "tailwind-merge"
       ],
       "registryDependencies": [
-        "theme"
+        "@muffled/theme"
       ],
       "files": [
         {
@@ -912,7 +912,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -929,7 +929,7 @@
       "description": "Tabular data with hairline borders and no shadows.",
       "dependencies": [],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -949,7 +949,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -966,7 +966,7 @@
       "description": "Multi-line text input on ink and paper. Hairline border, outline focus, no shadows.",
       "dependencies": [],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -1032,7 +1032,7 @@
       "title": "Theme Provider",
       "description": "Light/dark switching for ink-and-paper tokens. Toggles .dark on html and persists to localStorage. Add themeInitScript to your root layout or index.html to avoid a flash.",
       "registryDependencies": [
-        "theme"
+        "@muffled/theme"
       ],
       "files": [
         {
@@ -1052,7 +1052,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {
@@ -1072,8 +1072,8 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface",
-        "toggle"
+        "@muffled/surface",
+        "@muffled/toggle"
       ],
       "files": [
         {
@@ -1092,7 +1092,7 @@
         "radix-ui"
       ],
       "registryDependencies": [
-        "surface"
+        "@muffled/surface"
       ],
       "files": [
         {

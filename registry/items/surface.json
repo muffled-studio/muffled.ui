@@ -3,8 +3,13 @@
   "type": "registry:lib",
   "title": "Surface",
   "description": "Shared className merge and floating panel styles.",
-  "dependencies": ["clsx", "tailwind-merge"],
-  "registryDependencies": ["theme"],
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "@muffled/theme"
+  ],
   "files": [
     {
       "path": "registry/lib/surface.ts",

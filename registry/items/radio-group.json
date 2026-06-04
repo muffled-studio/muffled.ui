@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Radio Group",
   "description": "Single selection on ink and paper. Hairline border, opacity hover and press, no shadows.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/radio-group.tsx",

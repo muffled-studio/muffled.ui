@@ -3,8 +3,14 @@
   "type": "registry:ui",
   "title": "Item",
   "description": "Flexible list row with title, description, media, and actions on ink and paper.",
-  "dependencies": ["class-variance-authority", "radix-ui"],
-  "registryDependencies": ["surface", "separator"],
+  "dependencies": [
+    "class-variance-authority",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/separator"
+  ],
   "files": [
     {
       "path": "registry/ui/item.tsx",

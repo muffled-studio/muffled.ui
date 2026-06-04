@@ -4,7 +4,9 @@
   "title": "Card",
   "description": "Surface container on paper and ink. Hairline border, 6px radius, no shadow.",
   "dependencies": [],
-  "registryDependencies": ["surface"],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/card.tsx",

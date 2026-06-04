@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Select",
   "description": "Form select with popover dropdown on paper, hairline border, no shadow.",
-  "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/select.tsx",

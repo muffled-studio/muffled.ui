@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Accordion",
   "description": "Expandable sections for dense content. Hairline separators, no shadows.",
-  "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/accordion.tsx",

@@ -3,7 +3,9 @@
   "type": "registry:ui",
   "title": "Input",
   "description": "Text fields in Space Mono. Hairline border, ink focus border, no shadows.",
-  "registryDependencies": ["surface"],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/input.tsx",

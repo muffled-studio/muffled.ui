@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Tooltip",
   "description": "Compact hints on hover or focus. Paper surface, hairline border, no shadow.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/tooltip.tsx",

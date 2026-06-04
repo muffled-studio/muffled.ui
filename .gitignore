@@ -45,6 +45,8 @@ next-env.d.ts
 
 *storybook.log
 
+scripts/cli-fixture/
+
 public/r/
 public/storybook/
 playwright-report/

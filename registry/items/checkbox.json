@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Checkbox",
   "description": "Binary selection on ink and paper. Hairline border, opacity hover and press, no shadows.",
-  "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/checkbox.tsx",

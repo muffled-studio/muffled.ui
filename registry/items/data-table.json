@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Data Table",
   "description": "TanStack Table wired to registry table primitives for sortable, filterable grids.",
-  "dependencies": ["@tanstack/react-table"],
-  "registryDependencies": ["surface", "table"],
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/table"
+  ],
   "files": [
     {
       "path": "registry/ui/data-table.tsx",

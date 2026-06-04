@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Separator",
   "description": "Hairline dividers on ink and paper. 0.5px rules, border token, no shadows.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/separator.tsx",

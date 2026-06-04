@@ -11,9 +11,13 @@ export default function LandingPage() {
         <h1 className="font-mono text-3xl tracking-tight">muffled.ui registry</h1>
         <p className="max-w-2xl text-sm text-muted-foreground">
           we ship ink-and-paper react primitives through a standalone shadcn registry.
+          install with{" "}
+          <code className="font-mono text-xs">bunx shadcn add @muffled/…</code> (namespaced
+          registryDependencies — no bare surface/theme).
         </p>
         <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
-          bunx shadcn@latest add @muffled/theme
+          bunx shadcn@latest add @muffled/theme{"\n"}
+          bunx shadcn@latest add @muffled/button
         </pre>
       </section>
 

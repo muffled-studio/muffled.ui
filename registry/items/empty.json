@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Empty",
   "description": "Empty state layout with icon, title, description, and optional content.",
-  "dependencies": ["class-variance-authority"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/empty.tsx",

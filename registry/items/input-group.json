@@ -3,8 +3,15 @@
   "type": "registry:ui",
   "title": "Input Group",
   "description": "Inputs with inline addons, prefix text, and action buttons on ink and paper.",
-  "dependencies": ["class-variance-authority"],
-  "registryDependencies": ["surface", "button", "input", "textarea"],
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/button",
+    "@muffled/input",
+    "@muffled/textarea"
+  ],
   "files": [
     {
       "path": "registry/ui/input-group.tsx",

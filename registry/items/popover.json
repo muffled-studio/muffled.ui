@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Popover",
   "description": "Floating panel on paper with hairline border and no shadow.",
-  "dependencies": ["radix-ui"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/popover.tsx",

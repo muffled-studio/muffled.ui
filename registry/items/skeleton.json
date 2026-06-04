@@ -3,7 +3,9 @@
   "type": "registry:ui",
   "title": "Skeleton",
   "description": "Loading placeholders using ink/06 and paper/12 surface washes. No pulse or shimmer.",
-  "registryDependencies": ["surface"],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/skeleton.tsx",

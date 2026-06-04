@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Menubar",
   "description": "Application menu bar with nested menus and keyboard shortcuts.",
-  "dependencies": ["radix-ui", "lucide-react"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "radix-ui",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/menubar.tsx",

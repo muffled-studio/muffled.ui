@@ -3,8 +3,13 @@
   "type": "registry:ui",
   "title": "Pagination",
   "description": "Page navigation with previous, next, numbered links, and ellipsis.",
-  "dependencies": ["lucide-react"],
-  "registryDependencies": ["surface", "button"],
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@muffled/surface",
+    "@muffled/button"
+  ],
   "files": [
     {
       "path": "registry/ui/pagination.tsx",

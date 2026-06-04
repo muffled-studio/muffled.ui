@@ -3,8 +3,12 @@
   "type": "registry:ui",
   "title": "Alert",
   "description": "Status callouts on paper and ink. Hairline borders, utility hue semantics, no decorative fills.",
-  "dependencies": ["class-variance-authority"],
-  "registryDependencies": ["surface"],
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "@muffled/surface"
+  ],
   "files": [
     {
       "path": "registry/ui/alert.tsx",
