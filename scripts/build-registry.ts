@@ -18,6 +18,8 @@ type RegistryItem = {
   registryDependencies?: string[];
   files?: RegistryFile[];
   css?: Record<string, unknown>;
+  cssVars?: Record<string, Record<string, string>>;
+  fonts?: unknown[];
 };
 
 type RegistryManifest = {
@@ -39,7 +41,7 @@ const manifest = JSON.parse(manifestRaw) as RegistryManifest;
 const themeCss = await readFile(themeCssPath, "utf8");
 const themeRegistryCss = cssToRegistryObject(themeCss);
 const themeVarsRaw = await readFile(themeVarsPath, "utf8");
-const themeCssVars = JSON.parse(themeVarsRaw) as Record<string, unknown>;
+const themeCssVars = JSON.parse(themeVarsRaw) as RegistryItem["cssVars"];
 
 await rm(outputRoot, { recursive: true, force: true });
 await mkdir(outputRoot, { recursive: true });
@@ -66,7 +68,7 @@ for (const item of manifest.items) {
   if (item.name === "theme") {
     payload.css = themeRegistryCss;
     payload.cssVars = themeCssVars;
-    delete (payload as Record<string, unknown>).fonts;
+    delete payload.fonts;
   }
 
   const itemPath = resolve(outputRoot, `${item.name}.json`);
