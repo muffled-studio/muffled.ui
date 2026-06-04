@@ -17,8 +17,13 @@ export default function LandingPage() {
         </p>
         <pre className="overflow-x-auto border border-border bg-muted p-4 font-mono text-xs">
           bunx shadcn@latest add @muffled/theme{"\n"}
-          bunx shadcn@latest add @muffled/button
+          bunx shadcn@latest add @muffled/button{"\n"}
+          bunx shadcn@latest add @muffled/theme-provider
         </pre>
+        <p className="max-w-2xl text-xs text-muted-foreground">
+          add theme before components. vite + tailwind v4: theme pulls @fontsource
+          packages; keep them installed if imports live in your css.
+        </p>
       </section>
 
       <section className="space-y-4">

@@ -31,12 +31,15 @@ const root = process.cwd();
 const manifestPath = resolve(root, "registry.json");
 const outputRoot = resolve(root, "public", "r");
 const themeCssPath = resolve(root, "registry/styles/muffled-theme.css");
+const themeVarsPath = resolve(root, "registry/styles/muffled-theme-vars.json");
 
 const manifestRaw = await readFile(manifestPath, "utf8");
 const manifest = JSON.parse(manifestRaw) as RegistryManifest;
 
 const themeCss = await readFile(themeCssPath, "utf8");
 const themeRegistryCss = cssToRegistryObject(themeCss);
+const themeVarsRaw = await readFile(themeVarsPath, "utf8");
+const themeCssVars = JSON.parse(themeVarsRaw) as Record<string, unknown>;
 
 await rm(outputRoot, { recursive: true, force: true });
 await mkdir(outputRoot, { recursive: true });
@@ -62,6 +65,8 @@ for (const item of manifest.items) {
 
   if (item.name === "theme") {
     payload.css = themeRegistryCss;
+    payload.cssVars = themeCssVars;
+    delete (payload as Record<string, unknown>).fonts;
   }
 
   const itemPath = resolve(outputRoot, `${item.name}.json`);
