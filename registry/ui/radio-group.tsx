@@ -1,14 +1,11 @@
-import { RadioGroup as RadioGroupPrimitive } from "radix-ui";
-import type * as React from "react";
+import { Radio as RadioPrimitive } from "@base-ui/react/radio";
+import { RadioGroup as RadioGroupPrimitive } from "@base-ui/react/radio-group";
 
 import { cn } from "@/registry/lib/surface";
 
-function RadioGroup({
-  className,
-  ...props
-}: React.ComponentProps<typeof RadioGroupPrimitive.Root>) {
+function RadioGroup({ className, ...props }: RadioGroupPrimitive.Props) {
   return (
-    <RadioGroupPrimitive.Root
+    <RadioGroupPrimitive
       data-slot="radio-group"
       className={cn("grid w-full gap-2", className)}
       {...props}
@@ -16,26 +13,23 @@ function RadioGroup({
   );
 }
 
-function RadioGroupItem({
-  className,
-  ...props
-}: React.ComponentProps<typeof RadioGroupPrimitive.Item>) {
+function RadioGroupItem({ className, ...props }: RadioPrimitive.Root.Props) {
   return (
-    <RadioGroupPrimitive.Item
+    <RadioPrimitive.Root
       data-slot="radio-group-item"
       className={cn(
-        "group/radio-group-item peer relative flex aspect-square size-4 shrink-0 rounded-full border border-border bg-background outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] after:absolute after:-inset-x-3 after:-inset-y-2 hover:opacity-60 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] disabled:pointer-events-none disabled:opacity-40 aria-invalid:border-destructive data-checked:border-primary data-checked:bg-primary data-checked:text-primary-foreground group-has-disabled/field:opacity-40",
+        "group/radio-group-item peer relative flex aspect-square size-4 shrink-0 rounded-full border border-border bg-background outline-none transition-opacity duration-[var(--d-drift)] ease-[var(--ease-drift)] after:absolute after:-inset-x-3 after:-inset-y-2 hover:opacity-60 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-ring active:opacity-40 active:duration-[var(--d-snap)] active:ease-[var(--ease-snap)] data-disabled:pointer-events-none data-disabled:opacity-40 aria-invalid:border-destructive data-checked:border-primary data-checked:bg-primary data-checked:text-primary-foreground group-has-disabled/field:opacity-40",
         className,
       )}
       {...props}
     >
-      <RadioGroupPrimitive.Indicator
+      <RadioPrimitive.Indicator
         data-slot="radio-group-indicator"
         className="flex size-4 items-center justify-center"
       >
         <span className="absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-foreground" />
-      </RadioGroupPrimitive.Indicator>
-    </RadioGroupPrimitive.Item>
+      </RadioPrimitive.Indicator>
+    </RadioPrimitive.Root>
   );
 }
 
