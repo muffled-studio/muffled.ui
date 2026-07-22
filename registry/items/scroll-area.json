@@ -4,7 +4,7 @@
   "title": "Scroll Area",
   "description": "Custom-styled scrollable regions with vertical and horizontal scrollbars.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

@@ -32,19 +32,21 @@ function DatePicker({
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger asChild>
-        <Button
-          variant={variant}
-          data-empty={!date}
-          className={cn(
-            "w-[212px] justify-between font-normal data-[empty=true]:text-muted-foreground",
-            className
-          )}
-          {...buttonProps}
-        >
-          {date ? format(date, "PPP") : <span>{placeholder}</span>}
-          <ChevronDownIcon className="size-4 stroke-[1.5]" />
-        </Button>
+      <PopoverTrigger
+        render={
+          <Button
+            variant={variant}
+            data-empty={!date}
+            className={cn(
+              "w-[212px] justify-between font-normal data-[empty=true]:text-muted-foreground",
+              className
+            )}
+            {...buttonProps}
+          />
+        }
+      >
+        {date ? format(date, "PPP") : <span>{placeholder}</span>}
+        <ChevronDownIcon className="size-4 stroke-[1.5]" />
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align={align}>
         <Calendar

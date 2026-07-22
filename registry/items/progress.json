@@ -4,7 +4,7 @@
   "title": "Progress",
   "description": "Determinate progress bar on ink and paper.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

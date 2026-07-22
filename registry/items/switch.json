@@ -4,7 +4,7 @@
   "title": "Switch",
   "description": "Binary toggle on ink and paper. Hairline track, snap thumb motion, opacity hover and press.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

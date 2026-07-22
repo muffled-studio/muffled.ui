@@ -5,7 +5,7 @@
   "description": "Section switching with segmented and underline variants. Hairline borders, opacity hover, no shadows.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

@@ -9,7 +9,7 @@
       "title": "Accordion",
       "description": "Expandable sections for dense content. Hairline separators, no shadows.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -48,7 +48,7 @@
       "title": "Alert Dialog",
       "description": "Modal confirmation on paper. Hairline border, ink wash overlay, no shadow or blur.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface",
@@ -68,7 +68,7 @@
       "title": "Avatar",
       "description": "User images with fallback initials on ink and paper.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -88,7 +88,7 @@
       "description": "Status labels on ink and paper. Utility hues, hairline border, mono lowercase, no shadows.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -107,7 +107,7 @@
       "title": "Breadcrumb",
       "description": "Hierarchical page trail with links, separators, and ellipsis.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -128,7 +128,7 @@
       "description": "Primary actions on ink and paper. Opacity hover and press, hairline borders, no shadows.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -148,7 +148,7 @@
       "description": "Grouped actions with shared borders on ink and paper. Horizontal and vertical layouts.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface",
@@ -206,7 +206,7 @@
       "title": "Checkbox",
       "description": "Binary selection on ink and paper. Hairline border, opacity hover and press, no shadows.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -226,7 +226,7 @@
       "title": "Collapsible",
       "description": "Expandable sections with trigger and animated content.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [],
       "files": [
@@ -266,8 +266,7 @@
       "description": "Command palette for search and quick actions. Paper popover, hairline border, no shadow.",
       "dependencies": [
         "cmdk",
-        "lucide-react",
-        "radix-ui"
+        "lucide-react"
       ],
       "registryDependencies": [
         "@muffled/surface",
@@ -331,7 +330,7 @@
       "title": "Dialog",
       "description": "Modal on paper with hairline border, ink scrim, no shadow, no backdrop-blur.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -371,7 +370,7 @@
       "title": "Dropdown Menu",
       "description": "Contextual menu on paper with hairline border, no shadow, opacity states.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -431,6 +430,7 @@
       "title": "Form",
       "description": "React Hook Form field wiring with Zod validation. Mono labels, grotesk hints, destructive errors.",
       "dependencies": [
+        "@base-ui/react",
         "react-hook-form",
         "zod",
         "@hookform/resolvers"
@@ -453,7 +453,7 @@
       "title": "Hover Card",
       "description": "Preview content on hover. Popover surface on ink and paper.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -531,7 +531,7 @@
       "description": "Flexible list row with title, description, media, and actions on ink and paper.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface",
@@ -566,9 +566,6 @@
       "type": "registry:ui",
       "title": "Label",
       "description": "Form field labels in Space Mono. Ink opacity hierarchy, opacity hover and press, no shadows.",
-      "dependencies": [
-        "radix-ui"
-      ],
       "registryDependencies": [
         "@muffled/surface"
       ],
@@ -586,11 +583,12 @@
       "title": "Menubar",
       "description": "Application menu bar with nested menus and keyboard shortcuts.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
-        "@muffled/surface"
+        "@muffled/surface",
+        "@muffled/dropdown-menu"
       ],
       "files": [
         {
@@ -607,7 +605,7 @@
       "description": "Site navigation with dropdown panels.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -647,7 +645,7 @@
       "title": "Popover",
       "description": "Floating panel on paper with hairline border and no shadow.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -666,7 +664,7 @@
       "title": "Progress",
       "description": "Determinate progress bar on ink and paper.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -685,7 +683,7 @@
       "title": "Radio Group",
       "description": "Single selection on ink and paper. Hairline border, opacity hover and press, no shadows.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -704,7 +702,7 @@
       "title": "Scroll Area",
       "description": "Custom-styled scrollable regions with vertical and horizontal scrollbars.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -723,7 +721,7 @@
       "title": "Select",
       "description": "Form select with popover dropdown on paper, hairline border, no shadow.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -743,7 +741,7 @@
       "title": "Separator",
       "description": "Hairline dividers on ink and paper. 0.5px rules, border token, no shadows.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -762,7 +760,7 @@
       "title": "Sheet",
       "description": "Edge panel on paper with hairline border and no shadow.",
       "dependencies": [
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -784,7 +782,7 @@
       "description": "Collapsible app navigation on ink and paper. Off-canvas mobile sheet, icon collapse, hairline borders.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui",
+        "@base-ui/react",
         "lucide-react"
       ],
       "registryDependencies": [
@@ -831,7 +829,7 @@
       "title": "Slider",
       "description": "Range input with ink track, hairline thumb, opacity hover and press.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -909,7 +907,7 @@
       "title": "Switch",
       "description": "Binary toggle on ink and paper. Hairline track, snap thumb motion, opacity hover and press.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -946,7 +944,7 @@
       "description": "Section switching with segmented and underline variants. Hairline borders, opacity hover, no shadows.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -1012,7 +1010,7 @@
       "description": "Two-state control for on/off options. Press snap, opacity states, hairline outline variant.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"
@@ -1032,7 +1030,7 @@
       "description": "Grouped two-state controls for mutually exclusive or multi-select options.",
       "dependencies": [
         "class-variance-authority",
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface",
@@ -1052,7 +1050,7 @@
       "title": "Tooltip",
       "description": "Compact hints on hover or focus. Paper surface, hairline border, no shadow.",
       "dependencies": [
-        "radix-ui"
+        "@base-ui/react"
       ],
       "registryDependencies": [
         "@muffled/surface"

@@ -17,6 +17,9 @@ function ProgressDemo() {
 const meta = {
   title: "Progress",
   component: Progress,
+  args: {
+    value: 33,
+  },
 } satisfies Meta<typeof Progress>
 
 export default meta

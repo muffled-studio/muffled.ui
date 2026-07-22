@@ -4,6 +4,7 @@
   "title": "Form",
   "description": "React Hook Form field wiring with Zod validation. Mono labels, grotesk hints, destructive errors.",
   "dependencies": [
+    "@base-ui/react",
     "react-hook-form",
     "zod",
     "@hookform/resolvers"

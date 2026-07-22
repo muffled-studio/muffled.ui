@@ -4,7 +4,7 @@
   "title": "Avatar",
   "description": "User images with fallback initials on ink and paper.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

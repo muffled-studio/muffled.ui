@@ -4,7 +4,7 @@
   "title": "Separator",
   "description": "Hairline dividers on ink and paper. 0.5px rules, border token, no shadows.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

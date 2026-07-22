@@ -5,7 +5,7 @@
   "description": "Collapsible app navigation on ink and paper. Off-canvas mobile sheet, icon collapse, hairline borders.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui",
+    "@base-ui/react",
     "lucide-react"
   ],
   "registryDependencies": [

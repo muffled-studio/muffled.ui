@@ -5,8 +5,7 @@
   "description": "Command palette for search and quick actions. Paper popover, hairline border, no shadow.",
   "dependencies": [
     "cmdk",
-    "lucide-react",
-    "radix-ui"
+    "lucide-react"
   ],
   "registryDependencies": [
     "@muffled/surface",

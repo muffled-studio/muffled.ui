@@ -5,7 +5,7 @@
   "description": "Flexible list row with title, description, media, and actions on ink and paper.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface",
