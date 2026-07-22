@@ -4,7 +4,7 @@
   "title": "Dialog",
   "description": "Modal on paper with hairline border, ink scrim, no shadow, no backdrop-blur.",
   "dependencies": [
-    "radix-ui",
+    "@base-ui/react",
     "lucide-react"
   ],
   "registryDependencies": [

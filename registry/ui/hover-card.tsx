@@ -1,47 +1,55 @@
-import { HoverCard as HoverCardPrimitive } from "radix-ui";
-import type * as React from "react";
+"use client"
 
-import { cn } from "@/registry/lib/surface";
-import { floatingSurfaceClasses } from "@/registry/lib/surface";
-import { ThemedPortalShell } from "@/registry/lib/portal-container";
+import { PreviewCard as PreviewCardPrimitive } from "@base-ui/react/preview-card"
 
-function HoverCard({
-  ...props
-}: React.ComponentProps<typeof HoverCardPrimitive.Root>) {
-  return <HoverCardPrimitive.Root data-slot="hover-card" {...props} />;
+import { cn, floatingSurfaceClasses } from "@/registry/lib/surface"
+import { ThemedPortalShell } from "@/registry/lib/portal-container"
+
+function HoverCard({ ...props }: PreviewCardPrimitive.Root.Props) {
+  return <PreviewCardPrimitive.Root data-slot="hover-card" {...props} />
 }
 
-function HoverCardTrigger({
-  ...props
-}: React.ComponentProps<typeof HoverCardPrimitive.Trigger>) {
+function HoverCardTrigger({ ...props }: PreviewCardPrimitive.Trigger.Props) {
   return (
-    <HoverCardPrimitive.Trigger data-slot="hover-card-trigger" {...props} />
-  );
+    <PreviewCardPrimitive.Trigger data-slot="hover-card-trigger" {...props} />
+  )
 }
 
 function HoverCardContent({
   className,
-  align = "center",
+  side = "bottom",
   sideOffset = 4,
+  align = "center",
+  alignOffset = 0,
   ...props
-}: React.ComponentProps<typeof HoverCardPrimitive.Content>) {
+}: PreviewCardPrimitive.Popup.Props &
+  Pick<
+    PreviewCardPrimitive.Positioner.Props,
+    "align" | "alignOffset" | "side" | "sideOffset"
+  >) {
   return (
-    <HoverCardPrimitive.Portal data-slot="hover-card-portal">
+    <PreviewCardPrimitive.Portal data-slot="hover-card-portal">
       <ThemedPortalShell>
-        <HoverCardPrimitive.Content
-          data-slot="hover-card-content"
+        <PreviewCardPrimitive.Positioner
           align={align}
+          alignOffset={alignOffset}
+          side={side}
           sideOffset={sideOffset}
-          className={cn(
-            "z-50 w-64 origin-(--radix-hover-card-content-transform-origin) rounded-lg p-2.5 text-sm",
-            floatingSurfaceClasses(),
-            className,
-          )}
-          {...props}
-        />
+          className="isolate z-50"
+        >
+          <PreviewCardPrimitive.Popup
+            data-slot="hover-card-content"
+            className={cn(
+              "z-50 w-64 origin-(--transform-origin) rounded-lg p-2.5 text-sm",
+              floatingSurfaceClasses(),
+              className
+            )}
+            {...props}
+          />
+        </PreviewCardPrimitive.Positioner>
       </ThemedPortalShell>
-    </HoverCardPrimitive.Portal>
-  );
+    </PreviewCardPrimitive.Portal>
+  )
 }
 
-export { HoverCard, HoverCardContent, HoverCardTrigger };
+export { HoverCard, HoverCardTrigger, HoverCardContent }

@@ -4,7 +4,7 @@
   "title": "Popover",
   "description": "Floating panel on paper with hairline border and no shadow.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

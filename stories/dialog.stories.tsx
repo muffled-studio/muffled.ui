@@ -15,8 +15,8 @@ import { withTheme } from "./utils/theme-decorator"
 function DialogDemo() {
   return (
     <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="outline">open</Button>
+      <DialogTrigger render={<Button variant="outline" />}>
+        open
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

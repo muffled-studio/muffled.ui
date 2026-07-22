@@ -15,8 +15,8 @@ import {
 export function SheetDemo() {
   return (
     <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline">open sheet</Button>
+      <SheetTrigger render={<Button variant="outline" />}>
+        open sheet
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
@@ -27,8 +27,8 @@ export function SheetDemo() {
           content sits on popover surface with hairline borders.
         </div>
         <SheetFooter>
-          <SheetClose asChild>
-            <Button variant="outline">close</Button>
+          <SheetClose render={<Button variant="outline" />}>
+            close
           </SheetClose>
         </SheetFooter>
       </SheetContent>
