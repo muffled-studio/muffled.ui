@@ -11,8 +11,8 @@ import { withTheme } from "./utils/theme-decorator";
 function HoverCardDemo() {
   return (
     <HoverCard>
-      <HoverCardTrigger asChild>
-        <Button variant="link">@muffled</Button>
+      <HoverCardTrigger render={<Button variant="link" />}>
+        @muffled
       </HoverCardTrigger>
       <HoverCardContent>
         <div className="flex flex-col gap-1">

@@ -5,7 +5,7 @@
   "description": "Two-state control for on/off options. Press snap, opacity states, hairline outline variant.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

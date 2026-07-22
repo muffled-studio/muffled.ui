@@ -5,7 +5,7 @@
   "description": "Status labels on ink and paper. Utility hues, hairline border, mono lowercase, no shadows.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"

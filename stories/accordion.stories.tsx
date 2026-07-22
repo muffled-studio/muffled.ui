@@ -10,7 +10,7 @@ import { withTheme } from "./utils/theme-decorator";
 
 function AccordionDemo() {
   return (
-    <Accordion type="single" collapsible className="w-full max-w-md">
+    <Accordion className="w-full max-w-md">
       <AccordionItem value="overview">
         <AccordionTrigger>overview</AccordionTrigger>
         <AccordionContent>

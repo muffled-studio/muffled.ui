@@ -18,8 +18,8 @@ import { withTheme } from "./utils/theme-decorator";
 function DropdownMenuDemo() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline">open menu</Button>
+      <DropdownMenuTrigger render={<Button variant="outline" />}>
+        open menu
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-48">
         <DropdownMenuLabel>actions</DropdownMenuLabel>

@@ -12,8 +12,8 @@ export function TooltipDemo() {
   return (
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="outline">hover</Button>
+        <TooltipTrigger render={<Button variant="outline" />}>
+          hover
         </TooltipTrigger>
         <TooltipContent>short hint on ink and paper.</TooltipContent>
       </Tooltip>

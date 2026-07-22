@@ -14,8 +14,8 @@ import { withTheme } from "./utils/theme-decorator"
 function PopoverDemo() {
   return (
     <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="outline">open</Button>
+      <PopoverTrigger render={<Button variant="outline" />}>
+        open
       </PopoverTrigger>
       <PopoverContent className="w-60">
         <PopoverHeader>

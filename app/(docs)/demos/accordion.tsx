@@ -9,7 +9,7 @@ import {
 
 export function AccordionDemo() {
   return (
-    <Accordion type="single" collapsible className="w-full max-w-md">
+    <Accordion className="w-full max-w-md">
       <AccordionItem value="overview">
         <AccordionTrigger>overview</AccordionTrigger>
         <AccordionContent>
