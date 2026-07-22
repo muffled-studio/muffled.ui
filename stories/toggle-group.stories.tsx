@@ -10,7 +10,7 @@ import { withTheme } from "./utils/theme-decorator"
 function ToggleGroupDemo() {
   return (
     <div className="flex flex-col gap-8">
-      <ToggleGroup type="multiple" defaultValue={["bold", "italic"]}>
+      <ToggleGroup multiple defaultValue={["bold", "italic"]}>
         <ToggleGroupItem value="bold" aria-label="Toggle bold">
           <Bold />
         </ToggleGroupItem>
@@ -21,7 +21,7 @@ function ToggleGroupDemo() {
           <Underline />
         </ToggleGroupItem>
       </ToggleGroup>
-      <ToggleGroup type="single" variant="outline" defaultValue="bold">
+      <ToggleGroup variant="outline" defaultValue={["bold"]}>
         <ToggleGroupItem value="bold" aria-label="Toggle bold">
           <Bold />
         </ToggleGroupItem>
