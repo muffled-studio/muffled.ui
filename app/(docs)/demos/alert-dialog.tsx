@@ -18,8 +18,8 @@ import { Button } from "@/registry/ui/button";
 export function AlertDialogDemo() {
   return (
     <AlertDialog>
-      <AlertDialogTrigger asChild>
-        <Button variant="outline">open</Button>
+      <AlertDialogTrigger render={<Button variant="outline" />}>
+        open
       </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>

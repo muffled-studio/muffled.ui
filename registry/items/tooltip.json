@@ -4,7 +4,7 @@
   "title": "Tooltip",
   "description": "Compact hints on hover or focus. Paper surface, hairline border, no shadow.",
   "dependencies": [
-    "radix-ui"
+    "@base-ui/react"
   ],
   "registryDependencies": [
     "@muffled/surface"
