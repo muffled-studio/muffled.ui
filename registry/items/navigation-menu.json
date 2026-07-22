@@ -5,7 +5,7 @@
   "description": "Site navigation with dropdown panels.",
   "dependencies": [
     "class-variance-authority",
-    "radix-ui",
+    "@base-ui/react",
     "lucide-react"
   ],
   "registryDependencies": [
