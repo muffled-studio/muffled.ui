@@ -4,7 +4,7 @@
   "title": "Dropdown Menu",
   "description": "Contextual menu on paper with hairline border, no shadow, opacity states.",
   "dependencies": [
-    "radix-ui",
+    "@base-ui/react",
     "lucide-react"
   ],
   "registryDependencies": [

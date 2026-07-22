@@ -4,7 +4,7 @@
   "title": "Select",
   "description": "Form select with popover dropdown on paper, hairline border, no shadow.",
   "dependencies": [
-    "radix-ui",
+    "@base-ui/react",
     "lucide-react"
   ],
   "registryDependencies": [
