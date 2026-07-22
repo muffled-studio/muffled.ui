@@ -32,18 +32,16 @@ function ItemDemo() {
           </ItemActions>
         </Item>
         <ItemSeparator />
-        <Item variant="outline" size="sm" asChild>
-          <a href="#">
-            <ItemMedia>
-              <BadgeCheckIcon className="size-5" />
-            </ItemMedia>
-            <ItemContent>
-              <ItemTitle>your profile has been verified.</ItemTitle>
-            </ItemContent>
-            <ItemActions>
-              <ChevronRightIcon className="size-4" />
-            </ItemActions>
-          </a>
+        <Item variant="outline" size="sm" render={<a href="#" />}>
+          <ItemMedia>
+            <BadgeCheckIcon className="size-5" />
+          </ItemMedia>
+          <ItemContent>
+            <ItemTitle>your profile has been verified.</ItemTitle>
+          </ItemContent>
+          <ItemActions>
+            <ChevronRightIcon className="size-4" />
+          </ItemActions>
         </Item>
       </ItemGroup>
       <Item variant="muted">
